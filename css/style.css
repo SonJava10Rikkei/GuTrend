@@ -10,7 +10,9 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  color: #252425;
+}
+html {
+  /* color: #252425; */
   font-family: Neue Kabel, sans-serif;
   font-size: 16px;
 }
@@ -24,11 +26,10 @@
   height: 2000px;
 }
 .t-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
-
 
 .container-header {
   width: 100%;
@@ -136,11 +137,76 @@
   width: 2rem;
 }
 
-.t-header_bottom {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+/*///////////////////////////////// Menu ///////////////////////////////*/
+/*
+1. Là từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
 
-  background-color: violet;
-  height: 90px;
+*/
+/*
+1. Vị trí?
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng( kiểu chữ, hình tròn, vuông,...)
+*/
+.t-header_bottom {
+  background-color: rgb(245, 244, 244);
+  height: 83px;
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.171);
+  white-space: nowrap;
+}
+.t-header_bottom div {
+  line-height: 83px;
+}
+
+.t-header_bottom_nav {
+}
+.nav li {
+  display: inline-block;
+  list-style-type: none;
+
+  /* position: relative; */
+}
+.nav li a {
+  color: #000;
+  text-decoration: none;
+  line-height: 83px;
+  padding: 0 24px;
+  display: inline-block;
+  background-color: rgb(245, 244, 244);
+}
+.nav li:hover .subnav {
+  display: block;
+}
+.nav > li > a {
+  text-transform: uppercase;
+}
+.nav > li:hover > a {
+  color: #00aeef;
+  border-bottom: 2px solid #10a2f7;
+}
+.nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: rgb(245, 244, 244);
+  box-shadow: 0 2px 0 1px rgba(142, 142, 142, 0.263);
+  border-radius: 2px;
+}
+
+.nav .subnav li:hover a {
+  color: #00aeef;
+}
+.t-header_bottom_slider {
+}
+
+.t-header_bottom_content {
+}
+.t-header_bottom_footer {
+}
+
+.contents {
+  margin-top: 133px;
 }
