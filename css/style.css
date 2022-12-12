@@ -1,0 +1,145 @@
+:root {
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: #252425;
+  font-family: Neue Kabel, sans-serif;
+  font-size: 16px;
+}
+/* Doi mau placeholder */
+::placeholder {
+  color: #ffffff9c;
+}
+
+.c-layout {
+  background-color: rgb(210, 214, 214);
+  height: 2000px;
+}
+.t-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container-header {
+  width: 100%;
+  background: url(/image/header_bg_top.jpg) no-repeat 0 / cover;
+  height: 50px;
+  text-align: center;
+}
+.t-header_topBackground {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.t-phone-hotlineLeft {
+  background-color: #00aeef;
+  padding-left: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.t-phone-hotlineLeft span {
+  font-family: var(--bs-font-monospace);
+}
+
+.t-header_contactLeft {
+  align-items: center;
+  background-color: #00aeef;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  justify-content: flex-start;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.t-header_contactRight {
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.t-header_contactRight_element {
+  margin-left: 3rem;
+}
+.t-header_contactRight_btn {
+  align-items: center;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: none;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.1875rem;
+  outline: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.t-headerSearch {
+  position: relative;
+}
+.header-search-input {
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.24);
+  border-radius: 1.375rem;
+  display: flex;
+  height: 2.375rem;
+  padding: 0 3px 0 1.125rem;
+  width: 100%;
+}
+
+.header-search-input input {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  outline: 0;
+  padding-right: 0.625rem;
+  width: 100%;
+}
+.header-button-icon,
+.header-search-input button {
+  align-items: center;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  height: 2rem;
+  justify-content: center;
+  outline: none;
+  width: 2rem;
+}
+
+.t-header_bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  background-color: violet;
+  height: 90px;
+}
