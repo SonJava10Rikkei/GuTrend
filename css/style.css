@@ -6,16 +6,19 @@
     "Liberation Mono", "Courier New", monospace;
   --bs-body-font-family: var(--bs-font-sans-serif);
 }
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
+
 html {
   /* color: #252425; */
   font-family: Neue Kabel, sans-serif;
   font-size: 16px;
 }
+
 /* Doi mau placeholder */
 ::placeholder {
   color: #ffffff9c;
@@ -25,6 +28,7 @@ html {
   background-color: rgb(210, 214, 214);
   height: 2000px;
 }
+
 .t-header {
   position: fixed;
   width: 100%;
@@ -37,9 +41,12 @@ html {
   height: 50px;
   text-align: center;
 }
+
+
+
 .t-header_topBackground {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -47,7 +54,7 @@ html {
 
 .t-phone-hotlineLeft {
   background-color: #00aeef;
-  padding-left: 5rem;
+  /* padding-left: 5rem; */
   align-items: center;
   display: flex;
   justify-content: center;
@@ -74,14 +81,17 @@ html {
 
 .t-header_contactRight {
   align-items: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   display: flex;
-  justify-content: center;
-  margin-left: 2rem;
+  justify-content: space-around;
+  /* margin-left: 3rem; */
+  width: 100%;
 }
+
 .t-header_contactRight_element {
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
+
 .t-header_contactRight_btn {
   align-items: center;
   -webkit-appearance: none;
@@ -100,14 +110,16 @@ html {
 
 .t-headerSearch {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
+
 .header-search-input {
   align-items: center;
   background-color: hsla(0, 0%, 100%, 0.24);
   border-radius: 1.375rem;
   display: flex;
-  height: 2.375rem;
-  padding: 0 3px 0 1.125rem;
   width: 100%;
 }
 
@@ -122,6 +134,7 @@ html {
   padding-right: 0.625rem;
   width: 100%;
 }
+
 .header-button-icon,
 .header-search-input button {
   align-items: center;
@@ -152,42 +165,62 @@ html {
 */
 .t-header_bottom {
   background-color: rgb(245, 244, 244);
-  height: 83px;
+  height: 88px;
   display: flex;
   width: 100%;
   box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.171);
   white-space: nowrap;
 }
+
 .t-header_bottom div {
   line-height: 83px;
+  width: 100%;
 }
 
-.t-header_bottom_nav {
+.t-header_logo-left {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  margin-left: 5rem;
 }
+
+.logo-gutrend {
+  align-items: center;
+  display: flex;
+  justify-content: right;
+  width: 160px;
+  height: 60px;
+}
+
+.t-header_bottom_nav {}
+
 .nav li {
   display: inline-block;
   list-style-type: none;
-
-  /* position: relative; */
 }
+
 .nav li a {
   color: #000;
   text-decoration: none;
-  line-height: 83px;
-  padding: 0 24px;
+  line-height: 87px;
+  padding: 0 10px;
   display: inline-block;
   background-color: rgb(245, 244, 244);
 }
+
 .nav li:hover .subnav {
   display: block;
 }
-.nav > li > a {
+
+.nav>li>a {
   text-transform: uppercase;
 }
-.nav > li:hover > a {
+
+.nav>li:hover>a {
   color: #00aeef;
   border-bottom: 2px solid #10a2f7;
 }
+
 .nav .subnav {
   display: none;
   position: absolute;
@@ -199,14 +232,185 @@ html {
 .nav .subnav li:hover a {
   color: #00aeef;
 }
-.t-header_bottom_slider {
+
+.t-header_botom-right {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.t-header_bottom_content {
+.t-header_actions {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5rem;
 }
-.t-header_bottom_footer {
+
+
+.icon_header {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+
+#banner-img {
+  width: 100%;
 }
 
 .contents {
   margin-top: 133px;
+}
+
+/* mobile */
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+/* body {
+  margin: 0;
+  padding: 0; */
+
+/* make it look decent enough */
+/* background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+} */
+
+#menuToggle {
+
+  display: block;
+  justify-content: right;
+  position: relative;
+  top: 9px;
+  left: 70px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  width: 300px;
+  margin: -19px 0 0 -50px;
+  padding: 50px;
+  padding-top: 60px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(900%, -10%);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked~ul {
+  transform: none;
 }
