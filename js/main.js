@@ -1,6 +1,6 @@
-let arrayImages = ['/image/tb-pc.jpg', '/image/tp-pc-2.jpg', ]
+let arrayImages = ['/image/tb-pc.jpg', '/image/tp-pc-2.jpg',]
 let count = 0;
-let showBanner = function() {
+let showBanner = function () {
     let image = document.getElementById('banner-img');
     image.src = arrayImages[`${count}`];
     count++;
@@ -8,4 +8,4 @@ let showBanner = function() {
         count = 0;
     }
 }
-setInterval(showBanner, 3000);
+setInterval(showBanner, 4000);

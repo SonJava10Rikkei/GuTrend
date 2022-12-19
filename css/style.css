@@ -42,6 +42,14 @@ html {
   text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .t-header_topBackground {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
 
 
 .t-header_topBackground {
@@ -81,12 +89,25 @@ html {
 
 .t-header_contactRight {
   align-items: center;
-  /* flex-grow: 1; */
   display: flex;
   justify-content: space-around;
   /* margin-left: 3rem; */
-  width: 100%;
+  /* width: 100%; */
 }
+
+@media screen and (min-width: 1200px) {
+  .t-header_contactRight {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .t-header_contactRight_element-desktop {
+    display: none;
+  }
+}
+
+
 
 .t-header_contactRight_element {
   margin-left: 1rem;
@@ -114,6 +135,23 @@ html {
   justify-content: flex-end;
   width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .header-search-input-value {
+    display: none;
+    /* width: 80%; */
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .header-search-input-value {
+    /* display: none; */
+    width: 80%;
+  }
+
+}
+
 
 .header-search-input {
   align-items: center;
@@ -192,7 +230,11 @@ html {
   height: 60px;
 }
 
-.t-header_bottom_nav {}
+@media screen and (max-width:1200px) {
+  .t-header_bottom_nav {
+    display: none;
+  }
+}
 
 .nav li {
   display: inline-block;
@@ -262,7 +304,7 @@ html {
 }
 
 /* mobile */
-/*
+/* 
  * Made by Erik Terwan
  * 24th of November 2015
  * MIT License
@@ -289,11 +331,18 @@ html {
   justify-content: right;
   position: relative;
   top: 9px;
-  left: 70px;
+  left: 16px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
 }
+
+@media screen and (min-width: 1200px) {
+  #menuToggle {
+    display: none;
+  }
+}
+
 
 #menuToggle a {
   text-decoration: none;
@@ -362,7 +411,7 @@ html {
 #menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #ffffff;
 }
 
 /*
@@ -386,9 +435,11 @@ html {
  */
 #menu {
   top: 0px;
+  /* right: 350px; */
   right: 0px;
   position: absolute;
   width: 300px;
+  height: 900px;
   margin: -19px 0 0 -50px;
   padding: 50px;
   padding-top: 60px;
@@ -396,11 +447,9 @@ html {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-
   transform-origin: 0% 0%;
   transform: translate(900%, -10%);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 #menu li {

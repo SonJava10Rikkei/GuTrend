@@ -25,10 +25,6 @@
                         </a>
                     </div>
                     <div class="t-header_contactRight">
-
-
-
-
                         <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
                             <a href="">
                                 <button type="button" class="t-header_contactRight_btn">
@@ -37,7 +33,6 @@
                                     Tra cứu tình trạng đơn hàng
                                 </button>
                             </a>
-
                         </div>
                         <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
                             <a href="">
@@ -47,13 +42,13 @@
                                     Hệ thống Showroom
                                 </button>
                             </a>
-
                         </div>
 
                         <div class="t-header_contactRight_element ">
                             <div class="t-headerSearch">
                                 <form class="header-search-input" novalidate="">
-                                    <input style="color: #fff; padding: 0 3px 0 1.125rem; height: 2.375rem"
+                                    <input class="header-search-input-value"
+                                        style="color: #fff; padding: 0 3px 0 1.125rem; height: 2.375rem"
                                         placeholder="Tìm kiếm sản phẩm">
                                     <button type="submit">
                                         <i class="fa-sharp fa-solid fa-magnifying-glass"
@@ -62,29 +57,26 @@
                                 </form>
 
                                 <!-- Phần Menu mobile -->
-
                                 <nav role="navigation">
                                     <div id="menuToggle">
                                         <!--
-                                                                                                                                    A fake / hidden checkbox is used as click reciever,
-                                                                                                                                    so you can use the :checked selector on it.
-                                                                                                                                    -->
+                                        A fake / hidden checkbox is used as click reciever,
+                                        so you can use the :checked selector on it.
+                                        -->
                                         <input type="checkbox" />
+                                        <!--
+                                            Some spans to act as a hamburger.
+                                            They are acting like a real hamburger,
+                                            not that McDonalds stuff.
+                                             -->
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
 
                                         <!--
-                                                                                                                                    Some spans to act as a hamburger.
-                                                                                                                                    
-                                                                                                                                    They are acting like a real hamburger,
-                                                                                                                                    not that McDonalds stuff.
-                                                                                                                                    -->
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-
-                                        <!--
-                                                                                                                                    Too bad the menu has to be inside of the button
-                                                                                                                                    but hey, it's pure CSS magic.
-                                                                                                                                    -->
+                                         Too bad the menu has to be inside of the button
+                                         but hey, it's pure CSS magic.
+                                         -->
                                         <ul id="menu">
                                             <a href="#">
                                                 <li>Home</li>
@@ -118,7 +110,10 @@
 
             <div class="t-header_bottom">
                 <div class="t-header_logo-left">
-                    <img class="logo-gutrend" src="./image/logo-chu-dai.png" alt="">
+                    <a href="#">
+                        <img class="logo-gutrend" src="./image/logo-chu-dai.png" alt="">
+
+                    </a>
                 </div>
 
                 <div class="t-header_bottom_nav">
@@ -135,7 +130,6 @@
                         </li>
                         <li>
                             <a style="color: red;" href=""><b>SELL OFF</b></a>
-
                         </li>
                         <li>
                             <a href="">BỘ SƯU TẬP</a>
@@ -147,9 +141,12 @@
                 </div>
                 <div class="t-header_botom-right">
                     <div class="t-header_actions">
-                        <img class="icon_header" src="./image/user.png" alt="">
-                        <img class="icon_header" src="./image/heart.png" alt="">
-                        <img class="icon_header" src="./image/shopping-cart.png" alt="">
+
+                        <a href=""><img class="icon_header" src="./image/user.png" alt=""></a>
+                        <a href=""><img class="icon_header" src="./image/heart.png" alt=""></a>
+                        <a href=""><img class="icon_header" src="./image/shopping-cart.png" alt=""></a>
+
+
                     </div>
 
                 </div>
@@ -179,8 +176,8 @@
             <h1>Đây là chân trang</h1>
         </footer>
     </div>
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/7de9ee439a.js" crossorigin="anonymous"></script>
 </body>
-<script src="./js/main.js"></script>
-<script src="https://kit.fontawesome.com/7de9ee439a.js" crossorigin="anonymous"></script>
 
 </html>
