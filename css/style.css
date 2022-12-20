@@ -545,12 +545,15 @@ html {
 
 /* //////////////Banner///////////////// */
 .banner-detail-image {
-  position: absolute;
+  /* position: absolute; */
 }
 
 .next_banner {
   position: relative;
   margin-bottom: 30px;
+  z-index: 3;
+  margin-bottom: 0px;
+  bottom: 50px;
 }
 
 #banner-img {
