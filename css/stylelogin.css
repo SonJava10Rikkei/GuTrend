@@ -1,0 +1,158 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contents {
+  background-image: url("https://cf.shopee.vn/file/0b9a0fd62e7de74a93f48c7c234b0009");
+  /* background-size: 87%; */
+}
+
+.container {
+  /* margin-top: 50px; */
+  width: 360px;
+  margin-left: 55%;
+  height: 450px;
+  position: relative;
+  border-radius: 5px;
+  padding: 0px 0 30px 0;
+  background: linear-gradient(0, rgb(243, 11, 138), rgba(189, 190, 196, 0.521));
+}
+
+.row {
+  display: flex;
+  background-color: lavenderblush;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  font-size: 19px;
+  line-height: 20px;
+}
+
+.row a {
+  width: 50%;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+
+.row a.active,
+.row a:hover {
+  border-bottom: 2px solid #10a2f7;
+  color: #fd2a00;
+}
+
+input[type="submit"] {
+  background-color: #ff7403;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #f06e05d8;
+}
+
+.col_1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.inputPassword input {
+  position: relative;
+}
+
+.inputEye {
+  color: rgb(167, 167, 167);
+  /* padding: 0 12px; */
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  position: absolute;
+  top: 150px;
+  right: 9%;
+}
+
+.inputPassword2 input {
+  position: relative;
+}
+
+.inputEye2 {
+  color: rgb(167, 167, 167);
+  /* padding: 0 12px; */
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  position: absolute;
+  top: 216px;
+  right: 9%;
+}
+
+input,
+.btn {
+  width: 88%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  line-height: 10px;
+  text-decoration: none;
+}
+
+.strikethrough {
+  margin-top: 7px;
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+  flex: 1;
+}
+
+.col_2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.col_2 button {
+  text-align: center;
+  width: 30%;
+
+  margin-left: 50px;
+}
+
+/* Thêm màu thích hợp vào các nút fb và google */
+.socialBtn1 {
+  display: flex;
+  background-color: #0051ff;
+  width: 120px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.socialBtn1:hover {
+  background-color: #1407d3;
+}
+
+.socialBtn2 {
+  display: flex;
+  background-color: #fa0000;
+  width: 120px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.socialBtn2:hover {
+  background-color: #b60303;
+}
