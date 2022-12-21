@@ -1,51 +1,53 @@
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.contents__form-user {
+  background-image: url(/image/background-form.png);
+  height: 580px;
+  background-color: #f0e6de;
+  font-family: sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.contents {
-  background-image: url("https://cf.shopee.vn/file/0b9a0fd62e7de74a93f48c7c234b0009");
-  /* background-size: 87%; */
-}
-
-.container {
-  /* margin-top: 50px; */
+.container__form-user {
+  margin-top: 5%;
+  margin-left: 50%;
+  justify-content: center;
   width: 360px;
-  margin-left: 55%;
   height: 450px;
-  position: relative;
+  position: absolute;
   border-radius: 5px;
   padding: 0px 0 30px 0;
-  background: linear-gradient(0, rgb(243, 11, 138), rgba(189, 190, 196, 0.521));
+  background: linear-gradient(0deg, rgba(243, 11, 139, 0.411), rgba(189, 190, 196, 0.815));
 }
 
-.row {
+@media screen and (max-width: 768px) {
+  .container__form-user {
+    margin-left: 12%;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container__form-user {
+    margin-left: 0;
+    width: 280px;
+  }
+}
+
+.row__form-user {
   display: flex;
   background-color: lavenderblush;
-  padding: 15px;
-  border: none;
+  padding: 10px;
   border-radius: 4px;
-  margin: 5px 0;
-  opacity: 0.85;
-  font-size: 19px;
-  line-height: 20px;
+
 }
 
-.row a {
+.row__form-user a {
   width: 50%;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
-  border-bottom: 2px solid transparent;
   text-decoration: none;
 }
 
-.row a.active,
-.row a:hover {
+.row__form-user a.active,
+.row__form-user a:hover {
   border-bottom: 2px solid #10a2f7;
   color: #fd2a00;
 }
@@ -57,7 +59,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #f06e05d8;
+  background-color: #a54c03d8;
 }
 
 .col_1 {
@@ -65,45 +67,41 @@ input[type="submit"]:hover {
   margin-top: 20px;
 }
 
-.inputPassword input {
+.inputPassword .inputPassword2 input {
   position: relative;
 }
 
 .inputEye {
   color: rgb(167, 167, 167);
-  /* padding: 0 12px; */
   text-transform: uppercase;
   font-size: 0.75rem;
   position: absolute;
-  top: 150px;
+  top: 151px;
   right: 9%;
-}
-
-.inputPassword2 input {
-  position: relative;
 }
 
 .inputEye2 {
   color: rgb(167, 167, 167);
-  /* padding: 0 12px; */
   text-transform: uppercase;
   font-size: 0.75rem;
   position: absolute;
-  top: 216px;
+  top: 224px;
   right: 9%;
 }
 
-input,
-.btn {
+.input_form-user input {
   width: 88%;
-  padding: 10px;
+  padding: 9px;
   border: none;
-  border-radius: 4px;
-  margin: 5px 0;
-  opacity: 0.85;
+  border-radius: 20px;
+
   display: inline-block;
   line-height: 10px;
   text-decoration: none;
+}
+
+.input_form-user p {
+  font-size: 14px;
 }
 
 .strikethrough {
@@ -114,16 +112,15 @@ input,
   flex: 1;
 }
 
-.col_2 {
-  margin-top: 20px;
+.socialBtn {
   display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
 }
 
-.col_2 button {
+.socialBtn button {
   text-align: center;
-  width: 30%;
-
-  margin-left: 50px;
+  display: flex;
 }
 
 /* Thêm màu thích hợp vào các nút fb và google */
@@ -131,10 +128,9 @@ input,
   display: flex;
   background-color: #0051ff;
   width: 120px;
-  height: 40px;
   padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #333;
+  border-radius: 5px;
+  border: 0;
   cursor: pointer;
 }
 
@@ -146,13 +142,12 @@ input,
   display: flex;
   background-color: #fa0000;
   width: 120px;
-  height: 40px;
   padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #333;
-  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  /* cursor: pointer; */
 }
 
 .socialBtn2:hover {
-  background-color: #b60303;
+  background-color: #9e0707;
 }

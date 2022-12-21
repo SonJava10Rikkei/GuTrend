@@ -22,7 +22,7 @@ html {
 
 /* Doi mau placeholder */
 ::placeholder {
-  color: #ffffff9c;
+  color: #c2c1c1b2 !important;
 }
 
 .c-layout {
@@ -359,14 +359,11 @@ html {
   /* margin-top: 35px; */
 }
 
-.contents {
-  margin-top: 130px;
-}
 
 /* mobile */
 /* 
- * Made by Erik Terwan
- * 24th of November 2015
+* Made by Erik Terwan
+* 24th of November 2015
  * MIT License
  *
  *
@@ -376,14 +373,14 @@ html {
  */
 
 /* body {
-  margin: 0;
-  padding: 0; */
+   margin: 0;
+   padding: 0; */
 
 /* make it look decent enough */
 /* background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-} */
+   color: #cdcdcd;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+  } */
 
 #menuToggle {
 
@@ -435,8 +432,8 @@ html {
 }
 
 /*
- * Just a quick hamburger
- */
+  * Just a quick hamburger
+  */
 #menuToggle span {
   display: block;
   width: 26px;
@@ -465,9 +462,9 @@ html {
 }
 
 /* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
 #menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
@@ -475,24 +472,24 @@ html {
 }
 
 /*
- * But let's hide the middle one.
- */
+  * But let's hide the middle one.
+  */
 #menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 /*
- * Ohyeah and the last one should go the other direction
- */
+  * Ohyeah and the last one should go the other direction
+  */
 #menuToggle input:checked~span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
 /*
- * Make this absolute positioned
- * at the top left of the screen
- */
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
 #menu {
   overflow: auto;
   width: 275px;
@@ -507,7 +504,7 @@ html {
   background: #dfdede;
   /* list-style-type: none; */
   /* -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%; */
+    transform-origin: 0% 0%; */
   transform: translate(900%, -10%);
   transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
@@ -548,8 +545,8 @@ html {
 }
 
 /*
- * And let's slide it in from the left
- */
+* And let's slide it in from the left
+*/
 #menuToggle input:checked~ul {
   transform: none;
 }
@@ -583,6 +580,15 @@ html {
 
 /* //////////////Banner///////////////// */
 
+.contents__all {
+  margin-top: 130px;
+}
+
+@media screen and (max-width:360px) {
+  .contents__all {
+    margin-top: 110px;
+  }
+}
 
 
 
