@@ -3,6 +3,7 @@
   height: 580px;
   background-color: #f0e6de;
   font-family: sans-serif;
+  background-repeat: no-repeat;
 }
 
 .container__form-user {
@@ -52,13 +53,13 @@
   color: #fd2a00;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: #ff7403;
   color: white;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: #a54c03d8;
 }
 
@@ -116,6 +117,12 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: space-between;
   margin: 0 20px;
+}
+
+@media screen and (max-width:360px) {
+  .socialBtn {
+    margin: 0 6px;
+  }
 }
 
 .socialBtn button {
