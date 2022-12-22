@@ -74,7 +74,7 @@
                                                 <hr>
                                             </li>
                                             <li>
-                                                <a href="#">THỜI TRANG</a>
+                                                <a href="/page/product.html">THỜI TRANG</a>
                                                 <a><i class="fa-solid fa-plus add_fashion_mobile"
                                                         id="add_element_fashion_mobile"></i>
                                                     <hr>
@@ -117,13 +117,13 @@
             <!--                     Phần menu mobile                      -->
             <div class="t-header_bottom">
                 <div class="t-header_logo-left">
-                    <a href="#"><img class="logo-gutrend" src="/image/logo-chu-dai.png" alt=""></a>
+                    <a href="/index.html"><img class="logo-gutrend" src="/image/logo-chu-dai.png" alt=""></a>
                 </div>
                 <div class="t-header_bottom_nav">
                     <ul class="nav_pc">
                         <li><a href="#">HÀNG MỚI VỀ</a></li>
                         <li>
-                            <a href="#">THỜI TRANG</a>
+                            <a href="/page/product.html">THỜI TRANG</a>
                             <ul class="subnav">
                                 <li><a href="#">Váy Đầm</a></li>
                                 <li><a href="#">Áo Sơ Mi</a></li>
@@ -138,7 +138,8 @@
                 </div>
                 <div class="t-header_botom-right">
                     <div class="t-header_actions">
-                        <a style="z-index: 0;" href=""><img class="icon_header" src="/image/user.png" alt=""></a>
+                        <a style="z-index: 0;" href="/page/login.html"><img class="icon_header" src="/image/user.png"
+                                alt=""></a>
                         <a href=""><img class="icon_header" src="/image/heart.png" alt=""></a>
                         <span href="">1</span>
                         <a href=""><img class="icon_header" src="/image/shopping-cart.png" alt=""></a>
@@ -153,169 +154,221 @@
                         <div class="t-productFilter_GT">
                             <div class="t-productFilter_content">
                                 <div class="t-productFilter_category">
-                                    <div class=" d-flex align-items-center justify-content-between">
+                                    <div id="add_collection_catalog"
+                                        class=" d-flex align-items-center justify-content-between">
                                         <div class="t-productFilter_category_left d-flex align-items-center">
                                             <div><img style="width: 32px; height: 32px; margin-right: 10px;"
-                                                    src="/image/closet-bst.png" alt=""></div>
+                                                    src="/image/icon-closet-bst.png" alt=""></div>
                                             <p style="margin: 0;">Bộ sưu tập</p>
                                         </div>
-                                        <div class="t-productFilter_category_right">-</div>
+                                        <div class="t-productFilter_category_right">
+                                            <a><i class="fa-solid fa-plus" id="add_element__collection_catalog"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="t-productFilter_category_panel"></div>
+                                    <div class="t-productFilter_category_panel t-productFilter_category_panel-text">
+                                        Danh Sách Bộ Sưu Tập
+                                    </div>
                                 </div>
+                                <hr>
                                 <div class="t-productFilter_category">
-                                    <div class=" d-flex align-items-center justify-content-between">
+                                    <div id="add_collection_catalog2"
+                                        class=" d-flex align-items-center justify-content-between">
                                         <div class="t-productFilter_category_left d-flex align-items-center">
                                             <div><img style="width: 32px; height: 32px; margin-right: 10px;"
-                                                    src="/image/menu-bar-danh-muc.png" alt=""></div>
-                                            <p style="margin: 0;">Bộ sưu tập</p>
+                                                    src="/image/icon-menu-bar-danh-muc.png" alt=""></div>
+                                            <p style="margin: 0;">Danh mục</p>
                                         </div>
-                                        <div class="t-productFilter_category_right">-</div>
+                                        <div class="t-productFilter_category_right">
+                                            <a><i class="fa-solid fa-minus" id="add_element__collection_catalog2"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="t-productFilter_category_panel"></div>
+                                    <div class="t-productFilter_category_panel2 t-productFilter_category_panel-text">
+                                        Danh Sách Danh mục
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                     <div class="p-products_RightCol">
                         <div class="detail_GT">
                             <div class="title_GT">
-                                <h1>Thời trang nữ</h1>
+                                <h1>THỜI TRANG NỮ</h1>
                             </div>
-                            <div class="wrapper"></div>
-                            <div class="negative"></div>
-                            <div class=""></div>
+                            <div class="wrapper__GT">
+                                <div class="wrapper position-relative">
+                                    <div class="description">
+                                        <p class="u-fs-16 u-lh-21 a-paragraph-text a-paragraph-text-raisinBlack05"></p>
+                                    </div>
+                                    <div class="option_search">
+                                        <div class="filter_search">
+                                            <div class="a-icon"><img
+                                                    style="width: 24px; height: 24px; margin-right: 10px;"
+                                                    src="/image/icon-filter-blue.png" alt="filter_blue" loading="lazy">
+                                            </div>
+                                            <div class="u-ml-6"></div>
+                                            <p style="color: blue;">
+                                                Bộ lọc</p>
+                                        </div>
+                                        <div class="sort__GT">
+                                            <p style="text-align: center; margin-top: 14px; margin-right: 7px;">Sắp xếp
+                                                theo</p>
+                                            <select name="product_arrangements" id="product-select">
+                                                <option value="new__products">Mới nhất</option>
+                                                <option value="price_from_high_to_low">Giá từ cao đến thấp</option>
+                                                <option value="hamster">Giá từ thấp đến cao</option>
+                                                <option value="parrot">Bán chạy nhất</option>
+                                            </select>
+                                        </div>
 
+
+
+
+
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="negative">111</div>
+                            <div class="">111</div>
                         </div>
-
                     </div>
                 </div>
             </section>
-
         </div>
-        <!-- -------------------------------------------------------------          Footer -->
-        <footer class="text-center text-lg-start bg-light text-muted">
-            <!-- Section: Social media -->
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                <!-- Left -->
-                <div class="me-5 d-none d-lg-block">
-                    <span>Kết nối với nhà Gu trên các mạng xã hội:</span>
-                </div>
-                <!-- Left -->
 
-                <!-- Right -->
-                <div>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <!-- <i class="fab fa-twitter"></i> -->
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fa-brands fa-shopify"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                <!-- Right -->
-            </section>
-            <!-- Section: Social media -->
-            <!-- Section: Links  -->
-            <section class="">
-                <div class="container text-center text-md-start mt-5">
-                    <!-- Grid row -->
-                    <div class="row mt-3">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <!-- Content -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                <!-- <i class="fas fa-gem me-3"></i>Company name -->
-                                <img style="height: 130px;" src="/image/logo-gutrend-vuong-no.png" alt="">
-                            </h6>
-                            <p>
-                                Tự hào là thương hiệu Việt,
-                                Trao gửi những Giá trị thật
-                                Hạnh phúc đích thực đến tận tay khách hàng.
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Truy cập nhanh
-                            </h6>
-                            <p>
-                                <a href="#!" class="text-reset">Trang chủ</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Bộ sưu tập</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Tin tức thời trang</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Tuyển dụng</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Nàng hỏi - Gu Đáp
-                            </h6>
-                            <p>
-                                <a href="#!" class="text-reset">Hướng dẫn đặt hàng</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Hướng dẫn chọn size</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Chính sách khác hàng thân thiết</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Bảo hành và đổi sản phẩm</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
-                            <p><i class="fas fa-home me-3"></i> Mễ Trì, Nam Từ Liêm, Hà Nội</p>
-                            <p>
-                                <i class="fas fa-envelope me-3"></i>
-                                hotro@gutrend.vn
-                            </p>
-                            <p>
-                                <i class="fas fa-phone me-3"></i> 0988 938 861
-                                </a>
-                            </p>
-                            <p>
-                                <i class="fas fa-print me-3"></i> 0399 363 868
-                            </p>
-                        </div>
-                        <!-- Grid column -->
+
+
+        <!-- -------------------------------------------------------------          Footer -->
+        <div style="position: relative;">
+            <footer class="text-center text-lg-start bg-light text-muted">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    <!-- Left -->
+                    <div class="me-5 d-none d-lg-block">
+                        <span>Kết nối với nhà Gu trên các mạng xã hội:</span>
                     </div>
-                    <!-- Grid row -->
+                    <!-- Left -->
+
+                    <!-- Right -->
+                    <div>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <!-- <i class="fab fa-twitter"></i> -->
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fa-brands fa-shopify"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+                <!-- Section: Links  -->
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <!-- Content -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    <!-- <i class="fas fa-gem me-3"></i>Company name -->
+                                    <img style="height: 130px;" src="/image/logo-gutrend-vuong-no.png" alt="">
+                                </h6>
+                                <p>
+                                    Tự hào là thương hiệu Việt,
+                                    Trao gửi những Giá trị thật
+                                    Hạnh phúc đích thực đến tận tay khách hàng.
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Truy cập nhanh
+                                </h6>
+                                <p>
+                                    <a href="#!" class="text-reset">Trang chủ</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Bộ sưu tập</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Tin tức thời trang</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Tuyển dụng</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Nàng hỏi - Gu Đáp
+                                </h6>
+                                <p>
+                                    <a href="#!" class="text-reset">Hướng dẫn đặt hàng</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Hướng dẫn chọn size</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Chính sách khác hàng thân thiết</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Bảo hành và đổi sản phẩm</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
+                                <p><i class="fas fa-home me-3"></i> Mễ Trì, Nam Từ Liêm, Hà Nội</p>
+                                <p>
+                                    <i class="fas fa-envelope me-3"></i>
+                                    hotro@gutrend.vn
+                                </p>
+                                <p>
+                                    <i class="fas fa-phone me-3"></i> 0988 938 861
+                                    </a>
+                                </p>
+                                <p>
+                                    <i class="fas fa-print me-3"></i> 0399 363 868
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+                <!-- Copyright -->
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2022 Copyright:
+                    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Gutrend.vn</a>
                 </div>
-            </section>
-            <!-- Section: Links  -->
-            <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-                © 2022 Copyright:
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Gutrend.vn</a>
-            </div>
-            <!-- Copyright -->
-            <!-- Footer -->
-        </footer>
+                <!-- Copyright -->
+                <!-- Footer -->
+            </footer>
+        </div>
     </div>
     <script src="/js/main.js"></script>
     <script src="https://kit.fontawesome.com/7de9ee439a.js" crossorigin="anonymous"></script>

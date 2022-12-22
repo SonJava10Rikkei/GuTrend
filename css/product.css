@@ -19,39 +19,81 @@
 }
 
 .products__Gutrend {
-    background-color: rgb(241, 182, 109);
+    /* background-color: rgb(241, 182, 109); */
     height: 800px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .p-products_leftCol {
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 25%;
 }
 
-/* CSS khoảng cách danh mục */
+/********* CSS khoảng cách danh mục ******* */
 .t-productFilter_category {
     margin-top: 20px;
 }
 
-.t-productFilter_GT {
-    padding: 0 16px;
+.t-productFilter_category :hover {
+    cursor: pointer;
 }
 
+.t-productFilter_GT {
+    padding: 0 20px;
+}
 
+.t-productFilter_category_panel {
+    display: none;
+}
 
+.t-productFilter_category_left>p {
+    font-size: 21px;
 
+    color: blue;
+}
 
-
-
-
-
-
+.t-productFilter_category_panel-text {
+    /* margin-left: 42px; */
+    margin-top: 10px;
+    font-size: 18px;
+}
 
 
 /*/////////// Bên phải////////// */
 .p-products_RightCol {
-    background-color: brown;
+    background-color: rgb(177, 176, 176);
     width: 75%;
+}
+
+/************* tìm kiếm bên phải *************/
+.option_search {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter_search {
+    display: flex;
+}
+
+.filter_search :hover {
+    cursor: pointer;
+}
+
+.sort__GT {
+
+    display: flex;
+}
+
+.sort__GT select {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+}
+
+.sort__GT select {
+    border: 1px solid rgb(3, 153, 253);
+    border-radius: 99px;
+    color: rgb(0, 132, 255);
+    background-color: aliceblue;
 }
