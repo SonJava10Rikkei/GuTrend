@@ -148,24 +148,25 @@
         <div class="container__form-user">
           <form class="form-user" action="" method="post">
             <div class="row__form-user">
-              <a href="./login.html" class="active" rel="nofollow">ĐĂNG NHẬP</a>
-              <a href="./register.html" rel="nofollow">ĐĂNG KÝ</a>
+              <a href="/page/login.html" class="active" rel="nofollow">ĐĂNG NHẬP</a>
+              <a href="/page/register.html" rel="nofollow">ĐĂNG KÝ</a>
             </div>
             <div class="col_1 input_form-user">
               <!-- <label for="">Tài Khoản</label> <br /> -->
-              <input type="text" placeholder="Nhập email hoặc tên đăng nhập" /><br />
-              <p style="color: rgb(202, 7, 7);"> <i>a</i></p>
+              <input id="inputID" type="text" placeholder="vd: gutrend@gmail.com" /><br />
+              <p style="color: rgb(126, 126, 126);"><i id="checkAcc_1">Nhập email đăng nhập</i></p>
               <div class="inputPassword">
                 <div class="inputText">
                   <!-- <label for="">Mật Khẩu</label> <br /> -->
-                  <input id="Ippassword" type="password" placeholder="Mật khẩu chữ cái đầu viết hoa" /><br />
+                  <input id="Ippassword" type="password" placeholder="mật khẩu trên 8 ký tự" /><br />
                 </div>
                 <div class="inputEye">
                   <i class="fa-sharp fa-solid fa-eye-slash" id="eye"></i>
                 </div>
-                <p style="color: rgb(202, 7, 7);"> <i>a</i></p>
+                <p style="color: rgb(126, 126, 126);"> <i id="checkAcc_2">Nhập mật khẩu</i></p>
               </div>
-              <input style="height: 40px; width: 200px;" type="button" value="ĐĂNG NHẬP" />
+              <input id="signInform" onclick="checkAccount()" style="height: 40px; width: 200px;" type="button"
+                value="ĐĂNG NHẬP" />
               <p style="font-size: 14px; margin-top: 5px;">
                 <a href="links/quen/mat/khau" style="color: rgb(5, 3, 102); text-decoration: none; "> <i>Quên mật
                     khẩu?</i>

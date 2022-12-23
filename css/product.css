@@ -207,14 +207,15 @@
 .m-productCard_addCart {
     padding: 5px;
     border-radius: 0 0.75rem 0 0;
-    background-color: rgba(2, 35, 126, 0.664);
+    background-color: rgba(6, 64, 255, 0.808);
     bottom: 0;
     cursor: pointer;
     left: 0;
     opacity: 100;
     position: absolute;
+
     /* hiện nút mua hàng */
-    /* visibility: hidden; ///////////////////////////////////////////////////////*/
+    /* visibility: hidden; */
 }
 
 

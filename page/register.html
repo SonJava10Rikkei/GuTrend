@@ -122,8 +122,6 @@
           </div>
         </div>
       </div>
-
-
       <!--                     Phần menu mobile                      -->
       <div class="t-header_bottom">
         <div class="t-header_logo-left">
@@ -167,8 +165,8 @@
             <div class="col_1 input_form-user">
               <div>
                 <!-- <label for="">Tài Khoản</label> <br /> -->
-                <input type="id" placeholder="Nhập email hoặc tên đăng nhập" /><br />
-                <p style="color: rgb(202, 7, 7);"> <i>a</i></p>
+                <input id="inputID" type="id" placeholder="Nhập email đăng ký" /><br />
+                <p style="color: rgb(202, 7, 7);"><i id="valiadteID">Vui lòng nhập email</i></p>
               </div>
               <div class="inputPassword">
                 <div class="inputText">
@@ -178,7 +176,7 @@
                 <div class="inputEye">
                   <i class="fa-sharp fa-solid fa-eye-slash" id="eye"></i>
                 </div>
-                <p style="color: rgb(202, 7, 7);"> <i>a</i></p>
+                <p style="color: rgb(202, 7, 7);"> <i id="validateIppassword">nhập mật khẩu</i></p>
               </div>
               <div class="inputPassword2">
                 <div class="inputText2">
@@ -188,9 +186,12 @@
                 <div class="inputEye2">
                   <i class="fa-sharp fa-solid fa-eye-slash" id="eye2"></i>
                 </div>
-                <p style="color: rgb(202, 7, 7);"> <i></i></p>
+                <p style="color: rgb(202, 7, 7);"> <i id="validateIppassword2">nhập lại mật khẩu</i></p>
               </div>
-              <input style="height: 40px; width: 200px;" type="button" value="ĐĂNG KÝ" />
+
+              <!-- .............button dang ky........... -->
+              <input onclick="newMember()" id="signUpform" style="height: 40px; width: 200px;" type="button"
+                value="ĐĂNG KÝ" />
               <p style="font-size: 14px; margin-top: 5px;">
                 <a href="links/quen/mat/khau" style="color: rgb(5, 3, 102); text-decoration: none; "> <i>Quên mật
                     khẩu?</i>
@@ -235,8 +236,8 @@
         </div>
       </div>
     </div>
+    <!-- -------------------------------------------------------------          Footer -->
     <div style="position: relative;">
-      <!-- -------------------------------------------------------------          Footer -->
       <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
