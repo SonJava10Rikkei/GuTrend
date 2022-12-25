@@ -1,3 +1,4 @@
+// con mắt hiện mật khẩu
 let password = document.querySelector("#Ippassword");
 let eye = document.querySelector("#eye");
 
@@ -96,21 +97,20 @@ function confirmedPassword() {
 
 // Kiểm tra có đăng ký được hay không //
 function registerConfirm() {
-    if ((keyPass == false || keyPassConfirm == false)) {
+    if ((keyPass = false || keyPassConfirm == false)) {
         document.getElementById("signUpform").onsubmit = function (e) {
             e.preventDefault();
         };
     }
 }
 
-//! Hàm thêm thành viên//
+// Hàm thêm thành viên//
 let getMember = localStorage.getItem("Member");
 class Member {
-    constructor(username, password, status, secret, permissions, avatar, id) {
+    constructor(username, password, status, permissions, avatar, id) {
         this.username = username;
         this.password = password;
         this.status = status;
-        this.secret = secret;
         this.permissions = permissions;
         this.avatar = avatar;
         this.id = id;
@@ -152,7 +152,6 @@ function newMember() {
                     inputID.value,
                     Ippassword.value,
                     false,
-                    secretQuestion.value,
                     "actived",
                     "/image/user.png",
                     MemberList.length + 1

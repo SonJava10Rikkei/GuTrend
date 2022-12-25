@@ -39,3 +39,7 @@ add_collection_catalog2.onclick = function () {
         count__colection_catalog2 = 1;
     }
 }
+
+
+/// in sản phẩm
+

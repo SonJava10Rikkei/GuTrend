@@ -354,8 +354,17 @@ html {
 .icon_header {
   width: 20px;
   height: 20px;
-  margin-right: 16px;
+  margin-left: 16px;
   /* margin-top: 35px; */
+}
+
+
+.quantity_oder {
+  color: rgb(253, 253, 253);
+  background-color: #ef0000;
+  font-size: 14px;
+  padding: 0 4px;
+  border-radius: 99px;
 }
 
 

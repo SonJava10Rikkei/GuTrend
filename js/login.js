@@ -11,7 +11,6 @@ eye.addEventListener("click", function () {
 const ipnElement = document.querySelector("#Ippassword");
 var flag = false;
 
-
 ////////////////// Kiểm tra tài khoản đăng nhập /////////////////////
 let getMember = JSON.parse(localStorage.getItem("Member"));
 function checkAccount() {
@@ -36,6 +35,7 @@ function checkAccount() {
                 localStorage.setItem("Flag", JSON.stringify(flag));
                 document.getElementById("checkAcc_1").innerHTML =
                     "Sai mật khẩu hoặc tài khoản.";
+                document.getElementById("checkAcc_1").style.color = "red";
                 document.getElementById("losePassword").style.display = "block";
                 document.getElementById("signInform").onsubmit = function (e) {
                     e.preventDefault();
@@ -45,6 +45,8 @@ function checkAccount() {
     } else {
         document.getElementById("checkAcc_2").innerHTML =
             "Xin mời điền đầy đủ email và mật khẩu.";
+        document.getElementById("checkAcc_2").style.color = "red";
+
         document.getElementById("signInform").onsubmit = function (e) {
             e.preventDefault();
         };

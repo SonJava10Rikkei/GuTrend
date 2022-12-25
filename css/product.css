@@ -250,4 +250,9 @@
 
 .m-productCard_name a p {
     margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+
+.m-product_code p {
+    margin-bottom: 0.3rem;
 }

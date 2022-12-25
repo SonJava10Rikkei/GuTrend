@@ -1,0 +1,135 @@
+.t-checkoutInfo_wrap {
+    background: rgba(114, 201, 217, .12);
+    padding: 1rem 2.1875rem 1.75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .u-mt-negative-16 {
+        margin-top: -16px;
+    }
+}
+
+.u-mt-negative-16 {
+    margin-top: -16px;
+}
+
+.u-mt-16 {
+    margin-top: 16px;
+}
+
+.o-productEntry {
+    display: flex;
+}
+
+.o-productEntry_image {
+    flex-shrink: 0;
+    margin-right: 0.75rem;
+}
+
+.o-productEntry_image .a-image {
+    border-radius: 0.5rem;
+    width: 5.125rem;
+}
+
+.a-image-2x3 {
+    padding-bottom: 150%;
+}
+
+.a-image {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    transition: .4s ease;
+    width: 100%;
+}
+
+.a-image-cover img {
+    object-fit: cover;
+}
+
+.a-image img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+.o-productEntry_content {
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.o-productEntry_info {
+    flex-grow: 1;
+}
+
+.o-productEntry_name .a-paragraph-text {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.a-paragraph-text {
+    margin: 0;
+    -webkit-text-decoration-color: inherit;
+    text-decoration-color: inherit;
+    transition: .25s ease;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.o-productEntry_amountBadge {
+    align-items: center;
+    border: 1px solid #a1a1a1;
+    border-radius: 0.75rem;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0 0.5rem;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+.o-productEntry_priceZone {
+    flex-shrink: 0;
+}
+
+.a-paragraph-text {
+    margin: 0;
+    -webkit-text-decoration-color: inherit;
+    text-decoration-color: inherit;
+    transition: .25s ease;
+}
+
+.t-checkoutInfo_divider {
+    background: #252425;
+    height: 0.0625rem;
+    opacity: .1;
+    width: 100%;
+}
+
+.u-mb-16 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
