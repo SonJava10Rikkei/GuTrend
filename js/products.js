@@ -1,36 +1,3 @@
-let letDataRender = [
-    {
-        image: "../image/products/0-BE-AC12022.png",
-        name: "Quần ống đứng lai xéo",
-        price: "350.000 đ"
-
-    },
-    {
-        image: "../image/products/0-DEN-DC12077.png",
-        name: "Quần ống đứng lai xéo",
-        price: "350.000 đ"
-
-    },
-    {
-        image: "../image/products/0-DEN-DC12085.png",
-        name: "Quần ống đứng lai xéo",
-        price: "350.000 đ"
-
-    },
-    {
-        image: "../image/products/0-DO-QC12080.png",
-        name: "Quần ống đứng lai xéo",
-        price: "350.000 đ"
-
-    },
-    {
-        image: "../image/products/0-HONG-AC12025.png",
-        name: "Quần ống đứng lai xéo",
-        price: "350.000 đ"
-
-    },
-
-]
 /* 
  <div class="product_GT">
                                     <div class="m-productCard">
@@ -109,7 +76,57 @@ let letDataRender = [
                                     </div>
                                 </div>
 */
+let letDataRender = [
+    {
+        image: "../image/products/0-BE-AC12022.png",
+        name: "Quần ống đứng lai xéo1",
+        price: "350.000 đ",
+        quanlity: 1,
+        id: 1
 
+    },
+    {
+        image: "../image/products/0-DEN-DC12077.png",
+        name: "Quần ống đứng lai xéo2",
+        price: "350.000 đ",
+        quanlity: 1,
+        id: 2
+
+
+
+    },
+    {
+        image: "../image/products/0-DEN-DC12085.png",
+        name: "Quần ống đứng lai xéo3",
+        price: "350.000 đ",
+        quanlity: 1,
+        id: 3
+
+
+
+    },
+    {
+        image: "../image/products/0-DO-QC12080.png",
+        name: "Quần ống đứng lai xéo4",
+        price: "350.000 đ",
+        quanlity: 1,
+        id: 4
+
+
+
+    },
+    {
+        image: "../image/products/0-HONG-AC12025.png",
+        name: "Quần ống đứng lai xéo5",
+        price: "350.000 đ",
+        quanlity: 1,
+        id: 5
+
+
+
+    },
+
+]
 
 
 // click ẩn hiện danh mục //
@@ -246,17 +263,34 @@ function renderListProducts() {
 renderListProducts();
 // function add to cart
 function addToCart(id) {
-    console.log("111", id);
+    console.log("id", id);
     let listCart = JSON.parse(localStorage.getItem("listCart"));
+
     if (listCart == null) {
         listCart = [];
         listCart.push(letDataRender[id]);
         localStorage.setItem("listCart", JSON.stringify(listCart));
     } else {
-        for (let i = 0; i < array.length; i++) {
+
+        let flag = false;
+        for (let i = 0; i < listCart.length; i++) {
+            if (listCart[i].id == letDataRender[id].id) {
+                flag = true;
+                break;
+            } else {
+                flag = false;
+            }
 
         }
-        listCart.push(letDataRender[id]);
-        localStorage.setItem("listCart", JSON.stringify(listCart));
+        if (flag == true) {
+            listCart[id].quanlity = ++listCart[id].quanlity;
+            localStorage.setItem("listCart", JSON.stringify(listCart));
+            console.log("sản phẩm đã có trong giỏ hàng!");
+        } else {
+            listCart.push(letDataRender[id]);
+            localStorage.setItem("listCart", JSON.stringify(listCart));
+
+        }
+
     }
 }
