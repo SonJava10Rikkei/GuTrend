@@ -1,11 +1,16 @@
-:root {
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI",
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: "Liberation Mono", "Courier New", monospace;
-  --bs-body-font-family: var(--bs-font-sans-serif);
-}
+/*///////////////////////////////// Menu ///////////////////////////////*/
+/*
+1. Là từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
 
+*/
+/*
+1. Vị trí?
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng( kiểu chữ, hình tròn, vuông,...)
+*/
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -14,8 +19,7 @@
 }
 
 html {
-  /* color: #252425; */
-  font-family: Neue Kabel, sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
 }
 
@@ -100,12 +104,9 @@ html {
   background-color: #00aeef;
   display: flex;
   justify-content: center;
-  /* height: 100%; */
   justify-content: flex-start;
   text-decoration: none;
   text-align: center;
-  /* outline: none; */
-  /* padding: 0; */
   white-space: nowrap;
 }
 
@@ -113,8 +114,7 @@ html {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  /* margin-left: 3rem; */
-  /* width: 100%; */
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -161,18 +161,15 @@ html {
 @media screen and (max-width: 621px) {
   .header-search-input-value {
     display: none;
-    /* width: 80%; */
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header-search-input-value {
-    /* display: none; */
     width: 80%;
   }
 
 }
-
 
 .header-search-input {
   align-items: center;
@@ -209,19 +206,6 @@ html {
   width: 2rem;
 }
 
-/*///////////////////////////////// Menu ///////////////////////////////*/
-/*
-1. Là từ ngoài vào trong
-2. Từ trên xuống dưới
-3. Tổng quan đến chi tiết
-
-*/
-/*
-1. Vị trí?
-2. Kích thước
-3. Màu sắc
-4. Kiểu dáng( kiểu chữ, hình tròn, vuông,...)
-*/
 .t-header_bottom {
 
   display: flex;
@@ -271,7 +255,6 @@ html {
     height: 50px;
   }
 }
-
 
 @media screen and (max-width:1200px) {
   .t-header_bottom_nav {
@@ -355,9 +338,7 @@ html {
   width: 20px;
   height: 20px;
   margin-left: 16px;
-  /* margin-top: 35px; */
 }
-
 
 .quantity_oder {
   color: rgb(253, 253, 253);
@@ -368,30 +349,45 @@ html {
 }
 
 
-/* mobile */
-/* 
-* Made by Erik Terwan
-* 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
+.user_selector-content>a>p {
+  margin-bottom: 0px;
+  height: 30px;
+}
 
-/* body {
-   margin: 0;
-   padding: 0; */
+.user_selector-content>a {
+  text-decoration: none;
+  color: #232323;
+}
 
-/* make it look decent enough */
-/* background: #232323;
-   color: #cdcdcd;
-   font-family: "Avenir Next", "Avenir", sans-serif;
-  } */
+.user_selector-content {
+  position: fixed;
+  background-color: rgb(245, 244, 244);
+  padding: 0 30px 0px 30px;
+  box-shadow: 1px 2px 5px #888888;
+  margin-top: 41px;
+  right: 0px;
+}
+
+@media screen and (max-width: 360px) {
+  .user_selector-content {
+    margin-top: 20px;
+  }
+
+}
+
+#user_selector_profile {
+  visibility: hidden;
+}
+
+
+
+.checkoutShippingAddress_text {
+  margin-bottom: 1rem;
+}
+
+/*       mobile menu CSS           */
 
 #menuToggle {
-
   display: block;
   justify-content: right;
   position: relative;
@@ -408,7 +404,6 @@ html {
   }
 }
 
-
 #menuToggle a {
   text-decoration: none;
   color: #232323;
@@ -420,7 +415,6 @@ html {
   color: tomato;
 }
 
-
 #menuToggle input {
   display: block;
   width: 40px;
@@ -428,20 +422,12 @@ html {
   position: absolute;
   top: -7px;
   left: -5px;
-
   cursor: pointer;
-
   opacity: 0;
-  /* hide this */
   z-index: 2;
-  /* and place it over the hamburger */
-
   -webkit-touch-callout: none;
 }
 
-/*
-  * Just a quick hamburger
-  */
 #menuToggle span {
   display: block;
   width: 26px;
@@ -469,35 +455,23 @@ html {
   transform-origin: 0% 100%;
 }
 
-/* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
 #menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #797979;
 }
 
-/*
-  * But let's hide the middle one.
-  */
 #menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
-  * Ohyeah and the last one should go the other direction
-  */
+
 #menuToggle input:checked~span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
+
 #menu {
   overflow: auto;
   width: 275px;
@@ -510,9 +484,6 @@ html {
   padding: 50px 40px;
   padding-top: 60px;
   background: #dfdede;
-  /* list-style-type: none; */
-  /* -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%; */
   transform: translate(900%, -10%);
   transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
@@ -552,41 +523,9 @@ html {
   margin-top: 5px;
 }
 
-/*
-* And let's slide it in from the left
-*/
 #menuToggle input:checked~ul {
   transform: none;
 }
-
-
-/* //////////////Banner///////////////// */
-
-
-/* .next_banner {
-  position: relative;
-  margin-bottom: 30px;
-  z-index: 3;
-  margin-bottom: 0px;
-  bottom: 50px;
-}
-
-#banner-img {
-  width: 100%;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgb(151, 151, 151);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-} */
-
-/* //////////////Banner///////////////// */
 
 .contents__all {
   margin-top: 130px;
@@ -597,7 +536,3 @@ html {
     margin-top: 110px;
   }
 }
-
-
-
-/* //////////////Footer///////////////// */

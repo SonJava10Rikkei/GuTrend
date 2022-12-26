@@ -18,159 +18,200 @@
 </head>
 
 <body>
-    <div class="c-layout">
-        <header class="t-header">
-            <div class="container-header">
-                <div class="t-header_top t-header_topBackground">
-                    <div class="t-phone-hotlineLeft">
-                        <a class="t-header_contactLeft" href="tel:+084399363868" rel="noreferrer">
-                            <img src="/image/path-227.png" width="16x " alt="Hot line đặt hàng 0399363868">
-                            <p style="color: rgb(226, 224, 224); margin: 0; ">Hotline <span class="out_text_mobile"> đặt
-                                    hàng</span>
-                                0399363868</p>
+<div onclick="close_menu_user()" class="c-layout">
+    <header class="t-header">
+        <div class="container-header">
+            <div class="t-header_top t-header_topBackground">
+                <div class="t-phone-hotlineLeft">
+                    <a class="t-header_contactLeft" href="tel:+084399363868" rel="noreferrer">
+                        <img src="/image/path-227.png" width="16x " alt="Hot line đặt hàng 0399363868">
+                        <p style="color: rgb(226, 224, 224); margin: 0; ">Hotline <span class="out_text_mobile"> đặt
+                                hàng</span>
+                            0399363868</p>
+                    </a>
+                </div>
+                <div class="t-header_contactRight">
+                    <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
+                        <a href="/page/order_route.html">
+                            <button type="button" class="t-header_contactRight_btn">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass-location"
+                                    style="width: 20px; height: 20px; color: rgb(206, 204, 204);"></i>
+                                Tra cứu tình trạng đơn hàng
+                            </button>
                         </a>
                     </div>
-                    <div class="t-header_contactRight">
-                        <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
-                            <a href="/page/order_route.html">
-                                <button type="button" class="t-header_contactRight_btn">
-                                    <i class="fa-sharp fa-solid fa-magnifying-glass-location"
-                                        style="width: 20px; height: 20px; color: rgb(206, 204, 204);"></i>
-                                    Tra cứu tình trạng đơn hàng
-                                </button>
-                            </a>
-                        </div>
-                        <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
-                            <a href="">
-                                <button type="button" class="t-header_contactRight_btn">
-                                    <i class="fa-sharp fa-solid fa-map-location-dot"
-                                        style="width: 18px; height: 18px; color: rgb(211, 209, 209);"></i>
-                                    Hệ thống Showroom
-                                </button>
-                            </a>
-                        </div>
-
-                        <div class="t-header_contactRight_element ">
-                            <div class="t-headerSearch">
-                                <form class="header-search-input" novalidate="">
-                                    <input class="header-search-input-value"
-                                        style="color: #fff; padding: 0 3px 0 1.125rem; height: 2.375rem; font-family:sans-serif;"
-                                        placeholder="Tìm kiếm sản phẩm">
-                                    <button type="submit">
-                                        <i class="fa-sharp fa-solid fa-magnifying-glass"
-                                            style="width: 13px; height: 13px;"></i>
-                                    </button>
-                                </form>
-
-                                <!-- Phần Menu mobile -->
-                                <nav role="navigation">
-                                    <div id="menuToggle">
-                                        <input type="checkbox" />
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <ul id="menu">
-                                            <li>
-                                                <a href="#">HÀNG MỚI VỀ</a>
-                                                <hr>
-                                            </li>
-                                            <li>
-                                                <a href="/page/product.html">THỜI TRANG</a>
-                                                <a><i class="fa-solid fa-plus add_fashion_mobile"
-                                                        id="add_element_fashion_mobile"></i>
-                                                    <hr>
-                                                </a>
-                                                <!-- <a><i class="fa-solid fa-minus add_fashion_mobile"
-                                                        id="sub_menu_fashion_mobile"></i></a> -->
-                                                <ul class="fashion_element_mobile">
-                                                    <li><a href="">Váy Đầm</a></li>
-                                                    <li><a href="">Áo Sơ Mi</a></li>
-                                                    <li><a href="">Quần Âu</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a style="color: red;" href=""><b>SELL OFF</b></a>
-                                                <hr>
-                                            </li>
-                                            <li>
-                                                <a href="">BỘ SƯU TẬP</a>
-                                                <hr>
-                                            </li>
-                                            <li>
-                                                <a href="">Tin Tức</a>
-                                                <hr>
-                                            </li>
-                                            <li>
-                                                <a href="">Về GuTrend</a>
-                                                <hr>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <!-- Phần Menu mobile -->
-                            </div>
-                        </div>
-
+                    <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
+                        <a href="">
+                            <button type="button" class="t-header_contactRight_btn">
+                                <i class="fa-sharp fa-solid fa-map-location-dot"
+                                    style="width: 18px; height: 18px; color: rgb(211, 209, 209);"></i>
+                                Hệ thống Showroom
+                            </button>
+                        </a>
                     </div>
+
+                    <div class="t-header_contactRight_element ">
+                        <div class="t-headerSearch">
+                            <form class="header-search-input" novalidate="">
+                                <input class="header-search-input-value"
+                                    style="color: #fff; padding: 0 3px 0 1.125rem; height: 2.375rem; font-family:sans-serif;"
+                                    placeholder="Tìm kiếm sản phẩm">
+                                <button type="submit">
+                                    <i class="fa-sharp fa-solid fa-magnifying-glass"
+                                        style="width: 13px; height: 13px;"></i>
+                                </button>
+                            </form>
+
+                            <!-- Phần Menu mobile -->
+                            <nav role="navigation">
+                                <div id="menuToggle">
+                                    <input type="checkbox" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <ul id="menu">
+                                        <li>
+                                            <a href="#">HÀNG MỚI VỀ</a>
+                                            <hr>
+                                        </li>
+                                        <li>
+                                            <a href="/page/product.html">THỜI TRANG</a>
+                                            <a><i class="fa-solid fa-plus add_fashion_mobile"
+                                                    id="add_element_fashion_mobile"></i>
+                                                <hr>
+                                            </a>
+                                            <!-- <a><i class="fa-solid fa-minus add_fashion_mobile"
+                                                        id="sub_menu_fashion_mobile"></i></a> -->
+                                            <ul class="fashion_element_mobile">
+                                                <li><a href="">Váy Đầm</a></li>
+                                                <li><a href="">Áo Sơ Mi</a></li>
+                                                <li><a href="">Quần Âu</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a style="color: red;" href=""><b>SELL OFF</b></a>
+                                            <hr>
+                                        </li>
+                                        <li>
+                                            <a href="">BỘ SƯU TẬP</a>
+                                            <hr>
+                                        </li>
+                                        <li>
+                                            <a href="">Tin Tức</a>
+                                            <hr>
+                                        </li>
+                                        <li>
+                                            <a href="">Về GuTrend</a>
+                                            <hr>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <!-- Phần Menu mobile -->
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </div>
 
-            <!--                     Phần menu mobile                      -->
-            <div class="t-header_bottom">
-                <div class="t-header_logo-left">
-                    <a href="/index.html"><img class="logo-gutrend" src="/image/logo-chu-dai.png" alt=""></a>
+        <!--                     Phần menu mobile                      -->
+        <div class="t-header_bottom">
+            <div class="t-header_logo-left">
+                <a href="/index.html"><img class="logo-gutrend" src="/image/logo-chu-dai.png" alt=""></a>
+            </div>
+            <div class="t-header_bottom_nav">
+                <ul class="nav_pc">
+                    <li><a href="#">HÀNG MỚI VỀ</a></li>
+                    <li>
+                        <a href="/page/product.html">THỜI TRANG</a>
+                        <ul class="subnav">
+                            <li><a href="#">Váy Đầm</a></li>
+                            <li><a href="#">Áo Sơ Mi</a></li>
+                            <li><a href="#">Quần Âu</a></li>
+                        </ul>
+                    </li>
+                    <li><a style="color: red;" href="#"><b>SELL OFF</b></a></li>
+                    <li><a href="#">BỘ SƯU TẬP</a></li>
+                    <li><a href="#">Tin Tức</a></li>
+                    <li><a href="#">Về GuTrend</a></li>
+                </ul>
+            </div>
+            <div class="t-header_botom-right">
+                <div id="user_selector_profile">
+                    <div>
+                        <div class="user_selector-content">
+                            <a href="">
+                                <p>Thông tin của tôi</p>
+                            </a>
+                            <a href="">
+                                <p>Đơn hàng của tôi</p>
+                            </a>
+                            <a href="">
+                                <p>Tin nhắn của tôi</p>
+                            </a>
+                            <a href="">
+                                <p>Phiếu giảm giá của tôi</p>
+                            </a>
+                            <a href="">
+                                <p>Điểm thưởng của tôi</p>
+                            </a>
+                            <a href="">
+                                <p>Đã xem gần đây</p>
+                            </a>
+                            <a href="">
+                                <p>Cần trợ giúp</p>
+                            </a>
+                            <p>
+                                <a href="">
+                                    Đăng xuất
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="t-header_bottom_nav">
-                    <ul class="nav_pc">
-                        <li><a href="#">HÀNG MỚI VỀ</a></li>
-                        <li>
-                            <a href="/page/product.html">THỜI TRANG</a>
-                            <ul class="subnav">
-                                <li><a href="#">Váy Đầm</a></li>
-                                <li><a href="#">Áo Sơ Mi</a></li>
-                                <li><a href="#">Quần Âu</a></li>
-                            </ul>
-                        </li>
-                        <li><a style="color: red;" href="#"><b>SELL OFF</b></a></li>
-                        <li><a href="#">BỘ SƯU TẬP</a></li>
-                        <li><a href="#">Tin Tức</a></li>
-                        <li><a href="#">Về GuTrend</a></li>
-                    </ul>
-                </div>
+
                 <div class="t-header_botom-right">
+
                     <div class="t-header_actions">
+
                         <p style="margin-bottom: 0;"><span id="user_member"></span></p>
-                        <a style="z-index: 0;" href="/page/login.html"><img class="icon_header" src="/image/user.png"
-                                alt=""></a>
+                        <div class="icon_header_user" onmouseover="callHoverEvent()">
+                            <a style="z-index: 0;" href="/page/login.html">
+                                <img class="icon_header" src="/image/user.png" alt=""></a>
+                        </div>
                         <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
-                        <a href=""><img class="icon_header" src="/image/shopping-cart.png" alt=""></a>
+                        <a href="/page/gio-hang.html"><img class="icon_header" src="/image/shopping-cart.png"
+                                alt=""></a>
                         <p><span class="quantity_oder">0</span></p>
 
                     </div>
                 </div>
+
             </div>
-        </header>
+
+        </div>
+    </header>
 
         <div class="contents__all">
             <main>
                 <div class="p-checkout">
                     <div class="container o-container">
                         <form novalidate="">
-                            <p class="u-fs-36 ">Thanh toán</p>
+                            <p style="font-size: 40px;">Thanh toán</p>
                             <div class=" row">
                                 <div class="l-xxl-8 col-xl-7 col-12">
                                     <section>
                                         <div class="t-checkoutShippingAddress">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <p
-                                                    class="a-paragraph-text a-paragraph-text-700">
+                                            <div class=" checkoutShippingAddress_text d-flex align-items-center justify-content-between">
+                                                <p class="a-paragraph-text a-paragraph-text-700">
                                                     Địa chỉ giao hàng</p>
                                                 <div class="d-flex align-items-center"><span
                                                         class="u-fs-14 u-lh-24 a-paragraph-text">Bạn đã có tài
                                                         khoản?</span><span
-                                                        class=" t-checkoutShippingAddress_button"><span
-                                                            class=" a-paragraph-text a-paragraph-text-vividCerulean">Đăng
-                                                            nhập ngay</span></span></div>
+                                                        class=" t-checkoutShippingAddress_button"><span> Đăng nhập
+                                                            ngay</span></span></div>
                                             </div>
                                             <div class="u-mt-18">
                                                 <div class="u-ml-negative-8 u-mr-negative-8 row">
@@ -224,204 +265,61 @@
                                                                         Tỉnh / Thành phố<input
                                                                             class="m-pulldown_container_inputValue"
                                                                             value="" fdprocessedid="9b2d5k"></div>
-                                                                    <div class="m-pulldown_container_arrow"></div>
-                                                                    <!-- <ul class="m-pulldown_container-menu">
-                                                                        <li class="m-pulldown_container-menu-item">Hà
-                                                                            Nội</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hồ
-                                                                            Chí Minh</li>
-                                                                        <li class="m-pulldown_container-menu-item">An
-                                                                            Giang</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bà
-                                                                            Rịa - Vũng Tàu
-                                                                        </li>
-                                                                        <li class="m-pulldown_container-menu-item">Bắc
-                                                                            Giang</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bắc
-                                                                            Kạn</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bạc
-                                                                            Liêu</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bắc
-                                                                            Ninh</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bến
-                                                                            Tre</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bình
-                                                                            Định</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bình
-                                                                            Dương</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bình
-                                                                            Phước</li>
-                                                                        <li class="m-pulldown_container-menu-item">Bình
-                                                                            Thuận</li>
-                                                                        <li class="m-pulldown_container-menu-item">Cà
-                                                                            Mau</li>
-                                                                        <li class="m-pulldown_container-menu-item">Cần
-                                                                            Thơ</li>
-                                                                        <li class="m-pulldown_container-menu-item">Cao
-                                                                            Bằng</li>
-                                                                        <li class="m-pulldown_container-menu-item">Đà
-                                                                            Nẵng</li>
-                                                                        <li class="m-pulldown_container-menu-item">Đắk
-                                                                            Lắk</li>
-                                                                        <li class="m-pulldown_container-menu-item">Đắk
-                                                                            Nông</li>
-                                                                        <li class="m-pulldown_container-menu-item">Điện
-                                                                            Biên</li>
-                                                                        <li class="m-pulldown_container-menu-item">Đồng
-                                                                            Nai</li>
-                                                                        <li class="m-pulldown_container-menu-item">Đồng
-                                                                            Tháp</li>
-                                                                        <li class="m-pulldown_container-menu-item">Gia
-                                                                            Lai</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hà
-                                                                            Giang</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hà
-                                                                            Nam</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hà
-                                                                            Tĩnh</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hải
-                                                                            Dương</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hải
-                                                                            Phòng</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hậu
-                                                                            Giang</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hòa
-                                                                            Bình</li>
-                                                                        <li class="m-pulldown_container-menu-item">Hưng
-                                                                            Yên</li>
-                                                                        <li class="m-pulldown_container-menu-item">Khánh
-                                                                            Hòa</li>
-                                                                        <li class="m-pulldown_container-menu-item">Kiên
-                                                                            Giang</li>
-                                                                        <li class="m-pulldown_container-menu-item">Kon
-                                                                            Tum</li>
-                                                                        <li class="m-pulldown_container-menu-item">Lai
-                                                                            Châu</li>
-                                                                        <li class="m-pulldown_container-menu-item">Lâm
-                                                                            Đồng</li>
-                                                                        <li class="m-pulldown_container-menu-item">Lạng
-                                                                            Sơn</li>
-                                                                        <li class="m-pulldown_container-menu-item">Lào
-                                                                            Cai</li>
-                                                                        <li class="m-pulldown_container-menu-item">Long
-                                                                            An</li>
-                                                                        <li class="m-pulldown_container-menu-item">Nam
-                                                                            Định</li>
-                                                                        <li class="m-pulldown_container-menu-item">Nghệ
-                                                                            An</li>
-                                                                        <li class="m-pulldown_container-menu-item">Ninh
-                                                                            Bình</li>
-                                                                        <li class="m-pulldown_container-menu-item">Ninh
-                                                                            Thuận</li>
-                                                                        <li class="m-pulldown_container-menu-item">Phú
-                                                                            Thọ</li>
-                                                                        <li class="m-pulldown_container-menu-item">Phú
-                                                                            Yên</li>
-                                                                        <li class="m-pulldown_container-menu-item">Quảng
-                                                                            Bình</li>
-                                                                        <li class="m-pulldown_container-menu-item">Quảng
-                                                                            Nam</li>
-                                                                        <li class="m-pulldown_container-menu-item">Quảng
-                                                                            Ngãi</li>
-                                                                        <li class="m-pulldown_container-menu-item">Quảng
-                                                                            Ninh</li>
-                                                                        <li class="m-pulldown_container-menu-item">Quảng
-                                                                            Trị</li>
-                                                                        <li class="m-pulldown_container-menu-item">Sóc
-                                                                            Trăng</li>
-                                                                        <li class="m-pulldown_container-menu-item">Sơn
-                                                                            La</li>
-                                                                        <li class="m-pulldown_container-menu-item">Tây
-                                                                            Ninh</li>
-                                                                        <li class="m-pulldown_container-menu-item">Thái
-                                                                            Bình</li>
-                                                                        <li class="m-pulldown_container-menu-item">Thái
-                                                                            Nguyên</li>
-                                                                        <li class="m-pulldown_container-menu-item">Thanh
-                                                                            Hóa</li>
-                                                                        <li class="m-pulldown_container-menu-item">Thừa
-                                                                            Thiên Huế
-                                                                        </li>
-                                                                        <li class="m-pulldown_container-menu-item">Tiền
-                                                                            Giang</li>
-                                                                        <li class="m-pulldown_container-menu-item">Trà
-                                                                            Vinh</li>
-                                                                        <li class="m-pulldown_container-menu-item">Tuyên
-                                                                            Quang</li>
-                                                                        <li class="m-pulldown_container-menu-item">Vĩnh
-                                                                            Long</li>
-                                                                        <li class="m-pulldown_container-menu-item">Vĩnh
-                                                                            Phúc</li>
-                                                                        <li class="m-pulldown_container-menu-item">Yên
-                                                                            Bái</li>
-                                                                    </ul> -->
+
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="u-pl-8 u-pr-8 u-mt-md-0 u-mt-16 col-md-4">
-                                                        <div class="m-pulldown">
-                                                            <div class="m-pulldown_wrap m-pulldown_wrap-secondary">
-                                                                <div
-                                                                    class="m-pulldown_container m-pulldown_container-secondary m-pulldown_container-disabled">
+                                                        <div class="u-pl-8 u-pr-8 u-mt-md-0 u-mt-16 col-md-4">
+                                                            <div class="m-pulldown">
+                                                                <div class="m-pulldown_wrap m-pulldown_wrap-secondary">
                                                                     <div
-                                                                        class="m-pulldown_container_title m-pulldown_container_title-placeholder">
-                                                                        Quận / Huyện<input readonly=""
-                                                                            class="m-pulldown_container_inputValue"
-                                                                            value="" fdprocessedid="utxz"></div>
-                                                                    <div class="m-pulldown_container_arrow"></div>
-                                                                    <ul class="m-pulldown_container-menu">
-                                                                        <li class="u-pt-10 u-pb-10">
-                                                                            <p
-                                                                                class="u-fs-14 u-lh-20 a-paragraph-text a-paragraph-text-raisinBlack a-paragraph-text-center">
-                                                                                Không có dữ liệu</p>
-                                                                        </li>
-                                                                    </ul>
+                                                                        class="m-pulldown_container m-pulldown_container-secondary m-pulldown_container-disabled">
+                                                                        <div
+                                                                            class="m-pulldown_container_title m-pulldown_container_title-placeholder">
+                                                                            Quận / Huyện<input readonly=""
+                                                                                class="m-pulldown_container_inputValue"
+                                                                                value="" fdprocessedid="utxz"></div>
+                                                                        <div class="m-pulldown_container_arrow"></div>
+
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="u-pl-8 u-pr-8 u-mt-md-0 u-mt-16 col-md-4">
-                                                        <div class="m-pulldown">
-                                                            <div class="m-pulldown_wrap m-pulldown_wrap-secondary">
-                                                                <div
-                                                                    class="m-pulldown_container m-pulldown_container-secondary m-pulldown_container-disabled">
+                                                        <div class="u-pl-8 u-pr-8 u-mt-md-0 u-mt-16 col-md-4">
+                                                            <div class="m-pulldown">
+                                                                <div class="m-pulldown_wrap m-pulldown_wrap-secondary">
                                                                     <div
-                                                                        class="m-pulldown_container_title m-pulldown_container_title-placeholder">
-                                                                        Phường / Xã<input readonly=""
-                                                                            class="m-pulldown_container_inputValue"
-                                                                            value="" fdprocessedid="rssgt"></div>
-                                                                    <div class="m-pulldown_container_arrow"></div>
-                                                                    <ul class="m-pulldown_container-menu">
-                                                                        <li class="u-pt-10 u-pb-10">
-                                                                            <p
-                                                                                class="u-fs-14 u-lh-20 a-paragraph-text a-paragraph-text-raisinBlack a-paragraph-text-center">
-                                                                                Không có dữ liệu</p>
-                                                                        </li>
-                                                                    </ul>
+                                                                        class="m-pulldown_container m-pulldown_container-secondary m-pulldown_container-disabled">
+                                                                        <div
+                                                                            class="m-pulldown_container_title m-pulldown_container_title-placeholder">
+                                                                            Phường / Xã<input readonly=""
+                                                                                class="m-pulldown_container_inputValue"
+                                                                                value="" fdprocessedid="rssgt"></div>
+                                                                        <div class="m-pulldown_container_arrow"></div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="u-mt-20">
-                                                    <div class="d-flex align-items-center">
-                                                        <p
-                                                            class="u-fs-16 u-lh-30 a-paragraph-text a-paragraph-text-raisinBlack">
-                                                        </p>
-                                                        <div class="u-ml-17 u-mr-17">
-                                                            <div class="a-checkbox"><input id="billingAddress.home"
+                                                    <div class="billingAddress__selecte u-mt-20">
+                                                        <div class="d-flex align-items-center">
+                                                            <p
+                                                                class="u-fs-16 u-lh-30 a-paragraph-text a-paragraph-text-raisinBlack">
+                                                            </p>
+                                                            <div class="u-ml-17 u-mr-17">
+                                                                <div class="a-checkbox"><input id="billingAddress.home"
+                                                                        type="radio" name="billingAddress.type"
+                                                                        value="0"><label for="billingAddress.home">Nhà
+                                                                        riêng</label></div>
+                                                            </div>
+                                                            <div class="a-checkbox"><input id="billingAddress.company"
                                                                     type="radio" name="billingAddress.type"
-                                                                    value="0"><label for="billingAddress.home">Nhà
-                                                                    riêng</label></div>
+                                                                    value="1"><label for="billingAddress.company">Công
+                                                                    ty</label></div>
                                                         </div>
-                                                        <div class="a-checkbox"><input id="billingAddress.company"
-                                                                type="radio" name="billingAddress.type" value="1"><label
-                                                                for="billingAddress.company">Công ty</label></div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                     </section>
                                     <section class="u-pt-47 u-pt-lg-35 u-pt-md-33">
                                         <div class="t-checkoutNoted">
@@ -671,3 +569,10 @@
 </body>
 
 </html>
+
+
+<!-- <a href="/page/thanh-toan.html"><button type="button"
+                                                        class="btn btn-dark btn-block btn-lg"
+                                                        data-mdb-ripple-color="dark">Đặt
+                                                        hàng ngay</button>
+                                                </a> -->

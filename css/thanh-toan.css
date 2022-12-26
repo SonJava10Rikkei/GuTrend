@@ -9,6 +9,8 @@
     }
 }
 
+
+
 .u-mt-negative-16 {
     margin-top: -16px;
 }
@@ -27,7 +29,7 @@
 }
 
 .o-productEntry_image .a-image {
-    border-radius: 0.5rem;
+    border-radius: 6rem;
     width: 5.125rem;
 }
 
@@ -132,4 +134,36 @@ svg {
 .u-mb-16 {
     margin-bottom: 16px;
     margin-top: 16px;
+}
+
+.t-checkoutInfo_infomationLine {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.a-button_wrapper {
+    padding: 0.5rem;
+    background-color: rgb(255, 0, 85);
+    border: 0;
+    /* border-radius: 5px; */
+}
+
+.t-checkoutNoted {
+    margin-top: 1rem;
+}
+
+.a-textarea_inputele {
+    width: 230px;
+
+}
+
+.billingAddress__selecte {
+    margin-top: 0.5rem;
+}
+
+.m-pulldown {
+    width: 270px;
 }

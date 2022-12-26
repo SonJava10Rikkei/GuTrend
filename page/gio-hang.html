@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="c-layout">
+    <div onclick="close_menu_user()" class="c-layout">
         <header class="t-header">
             <div class="container-header">
                 <div class="t-header_top t-header_topBackground">
@@ -31,7 +31,7 @@
                     </div>
                     <div class="t-header_contactRight">
                         <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
-                            <a href="">
+                            <a href="/page/order_route.html">
                                 <button type="button" class="t-header_contactRight_btn">
                                     <i class="fa-sharp fa-solid fa-magnifying-glass-location"
                                         style="width: 20px; height: 20px; color: rgb(206, 204, 204);"></i>
@@ -48,7 +48,7 @@
                                 </button>
                             </a>
                         </div>
-
+    
                         <div class="t-header_contactRight_element ">
                             <div class="t-headerSearch">
                                 <form class="header-search-input" novalidate="">
@@ -60,7 +60,7 @@
                                             style="width: 13px; height: 13px;"></i>
                                     </button>
                                 </form>
-
+    
                                 <!-- Phần Menu mobile -->
                                 <nav role="navigation">
                                     <div id="menuToggle">
@@ -80,7 +80,7 @@
                                                     <hr>
                                                 </a>
                                                 <!-- <a><i class="fa-solid fa-minus add_fashion_mobile"
-                                                        id="sub_menu_fashion_mobile"></i></a> -->
+                                                            id="sub_menu_fashion_mobile"></i></a> -->
                                                 <ul class="fashion_element_mobile">
                                                     <li><a href="">Váy Đầm</a></li>
                                                     <li><a href="">Áo Sơ Mi</a></li>
@@ -109,11 +109,11 @@
                                 <!-- Phần Menu mobile -->
                             </div>
                         </div>
-
+    
                     </div>
                 </div>
             </div>
-
+    
             <!--                     Phần menu mobile                      -->
             <div class="t-header_bottom">
                 <div class="t-header_logo-left">
@@ -137,16 +137,59 @@
                     </ul>
                 </div>
                 <div class="t-header_botom-right">
-                    <div class="t-header_actions">
-                        <p style="margin-bottom: 0;"><span id="user_member"></span></p>
-                        <a style="z-index: 0;" href="/page/login.html"><img class="icon_header" src="/image/user.png"
-                                alt=""></a>
-                        <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
-                        <a href=""><img class="icon_header" src="/image/shopping-cart.png" alt=""></a>
-                        <p><span class="quantity_oder">0</span></p>
-
+                    <div id="user_selector_profile">
+                        <div>
+                            <div class="user_selector-content">
+                                <a href="">
+                                    <p>Thông tin của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Đơn hàng của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Tin nhắn của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Phiếu giảm giá của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Điểm thưởng của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Đã xem gần đây</p>
+                                </a>
+                                <a href="">
+                                    <p>Cần trợ giúp</p>
+                                </a>
+                                <p>
+                                    <a href="">
+                                        Đăng xuất
+                                    </a>
+                                </p>
+    
+                            </div>
+                        </div>
                     </div>
+    
+                    <div class="t-header_botom-right">
+    
+                        <div class="t-header_actions">
+    
+                            <p style="margin-bottom: 0;"><span id="user_member"></span></p>
+                            <div class="icon_header_user" onmouseover="callHoverEvent()">
+                                <a style="z-index: 0;" href="/page/login.html">
+                                    <img class="icon_header" src="/image/user.png" alt=""></a>
+                            </div>
+                            <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
+                            <a href="/page/gio-hang.html"><img class="icon_header" src="/image/shopping-cart.png"
+                                    alt=""></a>
+                            <p><span class="quantity_oder">0</span></p>
+    
+                        </div>
+                    </div>
+    
                 </div>
+    
             </div>
         </header>
 
@@ -311,8 +354,11 @@
                                                     <h5>1.320.000 đ</h5>
                                                 </div>
 
-                                                <button type="button" class="btn btn-dark btn-block btn-lg"
-                                                    data-mdb-ripple-color="dark">Đặt hàng ngay</button>
+                                                <a href="/page/thanh-toan.html"><button type="button"
+                                                        class="btn btn-dark btn-block btn-lg"
+                                                        data-mdb-ripple-color="dark">Đặt
+                                                        hàng ngay</button>
+                                                </a>
 
                                             </div>
                                         </div>
@@ -321,7 +367,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         </div>
         <!-- -------------------------------------------------------------          Footer -->

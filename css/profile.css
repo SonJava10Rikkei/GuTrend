@@ -1,0 +1,21 @@
+.profile_user {
+    /* background-color: aqua; */
+    padding: 3rem;
+    position: relative;
+    /* height: 800px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#user_lock_out {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: rgb(0, 174, 255);
+    border: 0px;
+}
+
+.content_right>div>p {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}

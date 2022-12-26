@@ -10,7 +10,6 @@ eye.addEventListener("click", function () {
 
 const ipnElement = document.querySelector("#Ippassword");
 var flag = false;
-
 ////////////////// Kiểm tra tài khoản đăng nhập /////////////////////
 let getMember = JSON.parse(localStorage.getItem("Member"));
 function checkAccount() {
@@ -52,3 +51,5 @@ function checkAccount() {
         };
     }
 }
+
+

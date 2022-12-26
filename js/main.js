@@ -21,26 +21,14 @@ add_menu_fashion_mobile_add.onclick = function () {
     }
 }
 
-// banner//
-// let arrayImages = [
 
-//     '/image/banner-tp-pc-2.jpg',
-//     '/image/banner-tet.jpg',
-//     '/image/banner-best-sell-50.jpg',
-//     '/image/banner-offtion-buy-4.jpg',
-// ]
-// let count = 0;
-// let showBanner = function () {
-//     let image = document.getElementById('banner-img');
-//     image.src = arrayImages[`${count}`];
-//     count++;
-//     if (count == 2) {
-//         count = 0;
-//     }
-// }
-// setInterval(showBanner, 3500);
-//  Banner//
+// hover icon user hidden menu user
+function callHoverEvent() {
+    document.getElementById('user_selector_profile').style.visibility = "visible";
 
+}
 
-//footer//
+function close_menu_user() {
+    document.getElementById('user_selector_profile').style.visibility = "hidden";
 
+}

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="c-layout">
+    <div onclick="close_menu_user()" class="c-layout">
         <header class="t-header">
             <div class="container-header">
                 <div class="t-header_top t-header_topBackground">
@@ -137,31 +137,63 @@
                     </ul>
                 </div>
                 <div class="t-header_botom-right">
-                    <div class="t-header_actions">
-                        <p style="margin-bottom: 0;"><span id="user_member"></span></p>
-                        <a style="z-index: 0;" href="/page/login.html"><img class="icon_header" src="/image/user.png"
-                                alt=""></a>
-                        <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
-                        <a href=""><img class="icon_header" src="/image/shopping-cart.png" alt=""></a>
-                        <p><span class="quantity_oder">0</span></p>
+                    <div id="user_selector_profile">
+                        <div>
+                            <div class="user_selector-content">
+                                <a href="">
+                                    <p>Thông tin của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Đơn hàng của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Tin nhắn của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Phiếu giảm giá của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Điểm thưởng của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Đã xem gần đây</p>
+                                </a>
+                                <a href="">
+                                    <p>Cần trợ giúp</p>
+                                </a>
+                                <p>
+                                    <a href="">
+                                        Đăng xuất
+                                    </a>
+                                </p>
 
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div class="t-header_botom-right">
+
+                        <div class="t-header_actions">
+
+                            <p style="margin-bottom: 0;"><span id="user_member"></span></p>
+                            <div class="icon_header_user" onmouseover="callHoverEvent()">
+                                <a style="z-index: 0;" href="/page/login.html">
+                                    <img class="icon_header" src="/image/user.png" alt=""></a>
+                            </div>
+                            <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
+                            <a href="/page/gio-hang.html"><img class="icon_header" src="/image/shopping-cart.png"
+                                    alt=""></a>
+                            <p><span class="quantity_oder">0</span></p>
+
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </header>
 
         <div class="contents__all">
-
-            <!-- <div class="banner-marketting">
-                <div class="banner-detail-image">
-                    <img id="banner-img" src="/image/banner-tb-pc.jpg" alt="">
-                    <div class="next_banner" style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                </div>
-            </div> -->
             <div>
                 <h1>-------Ở đây là phần contents-------</h1>
             </div>

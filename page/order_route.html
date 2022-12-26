@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="c-layout">
+    <div onclick="close_menu_user()" class="c-layout">
         <header class="t-header">
             <div class="container-header">
                 <div class="t-header_top t-header_topBackground">
@@ -30,7 +30,7 @@
                     </div>
                     <div class="t-header_contactRight">
                         <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
-                            <a href="">
+                            <a href="/page/order_route.html">
                                 <button type="button" class="t-header_contactRight_btn">
                                     <i class="fa-sharp fa-solid fa-magnifying-glass-location"
                                         style="width: 20px; height: 20px; color: rgb(206, 204, 204);"></i>
@@ -136,16 +136,59 @@
                     </ul>
                 </div>
                 <div class="t-header_botom-right">
-                    <div class="t-header_actions">
-                        <p style="margin-bottom: 0;"><span id="user_member"></span></p>
-                        <a style="z-index: 0;" href="/page/login.html"><img class="icon_header" src="/image/user.png"
-                                alt=""></a>
-                        <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
-                        <a href=""><img class="icon_header" src="/image/shopping-cart.png" alt=""></a>
-                        <p><span class="quantity_oder">0</span></p>
+                    <div id="user_selector_profile">
+                        <div>
+                            <div class="user_selector-content">
+                                <a href="">
+                                    <p>Thông tin của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Đơn hàng của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Tin nhắn của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Phiếu giảm giá của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Điểm thưởng của tôi</p>
+                                </a>
+                                <a href="">
+                                    <p>Đã xem gần đây</p>
+                                </a>
+                                <a href="">
+                                    <p>Cần trợ giúp</p>
+                                </a>
+                                <p>
+                                    <a href="">
+                                        Đăng xuất
+                                    </a>
+                                </p>
 
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="t-header_botom-right">
+
+                        <div class="t-header_actions">
+
+                            <p style="margin-bottom: 0;"><span id="user_member"></span></p>
+                            <div class="icon_header_user" onmouseover="callHoverEvent()">
+                                <a style="z-index: 0;" href="/page/login.html">
+                                    <img class="icon_header" src="/image/user.png" alt=""></a>
+                            </div>
+                            <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
+                            <a href="/page/gio-hang.html"><img class="icon_header" src="/image/shopping-cart.png"
+                                    alt=""></a>
+                            <p><span class="quantity_oder">0</span></p>
+
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </header>
 
@@ -156,9 +199,9 @@
                     <div class="row d-flex justify-content-center align-items-center h-100">
                         <div class="col-12">
                             <div class="card card-stepper text-black" style="border-radius: 16px;">
-
                                 <div style="position:relative;" class="card-body p-5">
-
+                                    <input style="padding: 0.5rem; width: 250px;" type="text"
+                                        placeholder="Nhập mã đơn hàng cần tra cứu">
                                     <div class="d-flex justify-content-between align-items-center mb-5">
                                         <div>
                                             <h5 class="mb-0">Mã đơn <span
@@ -166,9 +209,8 @@
                                             </h5>
                                         </div>
                                         <div class="text-end">
-                                            <p class="mb-0">Ngày đến dư kiến là <span>01/12/19</span></p>
-                                            <p class="mb-0">USPS <span
-                                                    class="font-weight-bold">234094567242423422898</span></p>
+                                            <p class="mb-0">Ngày đến dư kiến là <span></span></p>
+                                            <p class="mb-0"><span class="font-weight-bold">15/12/2022</span></p>
                                         </div>
                                     </div>
 
@@ -179,7 +221,6 @@
                                         <li class="step0 active text-center" id="step3"></li>
                                         <li class="step0 text-muted text-end" id="step4"></li>
                                     </ul>
-
                                     <div class="d-flex justify-content-between">
                                         <div class="d-lg-flex align-items-center">
                                             <i class="fas fa-clipboard-list fa-3x me-lg-4 mb-3 mb-lg-0"></i>
