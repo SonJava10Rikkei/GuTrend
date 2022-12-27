@@ -16,6 +16,30 @@
     <link rel="stylesheet" href="/css/thanh-toan.css">
 
 </head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .payments-now {
+        color: #fff;
+    }
+
+    input {
+        border: none;
+        list-style: none;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    textarea {
+        border: none;
+
+        outline: none;
+    }
+</style>
 
 <body>
     <div onclick="close_menu_user()" class="c-layout">
@@ -206,7 +230,7 @@
                                         <div class="t-checkoutShippingAddress">
                                             <div
                                                 class=" checkoutShippingAddress_text d-flex align-items-center justify-content-between">
-                                                <p class="a-paragraph-text a-paragraph-text-700">
+                                                <p  class="a-paragraph-text a-paragraph-text-700">
                                                     Địa chỉ giao hàng</p>
                                                 <div class="d-flex align-items-center">
                                                     <span class="u-fs-14 u-lh-24 a-paragraph-text">
@@ -225,6 +249,7 @@
                                                         <div class="a-input a-input-text a-input-secondary">
                                                             <div class="a-input_wrap a-input_wrap-secondary">
                                                                 <input name="billingAddress.name"
+                                                                id="namePay"
                                                                     placeholder="Họ và tên"
                                                                     class="a-input_input a-input_input-secondary"
                                                                     type="text" autocomplete="off" value="">
@@ -235,6 +260,7 @@
                                                         <div class="a-input a-input-number a-input-secondary">
                                                             <div class="a-input_wrap a-input_wrap-secondary">
                                                                 <input name="billingAddress.phone"
+                                                                id="phonePay"
                                                                     placeholder="Số điện thoại"
                                                                     class="a-input_input a-input_input-secondary"
                                                                     type="number" autocomplete="off" value="">
@@ -246,7 +272,9 @@
                                                     <div class="col">
                                                         <div class="a-input a-input-text a-input-secondary">
                                                             <div class="a-input_wrap a-input_wrap-secondary">
-                                                                <input name="billingAddress.email" placeholder="Email"
+                                                                <input name="billingAddress.email" 
+                                                                    id="emailPay"
+                                                                    placeholder="Email"
                                                                     class="a-input_input a-input_input-secondary"
                                                                     type="text" autocomplete="off" value="">
                                                             </div>
@@ -258,6 +286,7 @@
                                                         <div class="a-input a-input-text a-input-secondary">
                                                             <div class="a-input_wrap a-input_wrap-secondary">
                                                                 <input name="billingAddress.street"
+                                                                id="streetPay"
                                                                     placeholder="Địa chỉ chi tiết"
                                                                     class="a-input_input a-input_input-secondary"
                                                                     type="text" autocomplete="off" value="">
@@ -274,6 +303,7 @@
                                                                     <div
                                                                         class="m-pulldown_container_title m-pulldown_container_title-placeholder">
                                                                         Tỉnh / Thành phố<input
+                                                                            id="cityPay"
                                                                             class="m-pulldown_container_inputValue"
                                                                             value="" fdprocessedid="9b2d5k"></div>
 
@@ -287,7 +317,7 @@
                                                                         class="m-pulldown_container m-pulldown_container-secondary m-pulldown_container-disabled">
                                                                         <div
                                                                             class="m-pulldown_container_title m-pulldown_container_title-placeholder">
-                                                                            Quận / Huyện<input readonly=""
+                                                                            Quận / Huyện<input id="districtsPay" readonly=""
                                                                                 class="m-pulldown_container_inputValue"
                                                                                 value="" fdprocessedid="utxz"></div>
                                                                         <div class="m-pulldown_container_arrow"></div>
@@ -303,7 +333,7 @@
                                                                         class="m-pulldown_container m-pulldown_container-secondary m-pulldown_container-disabled">
                                                                         <div
                                                                             class="m-pulldown_container_title m-pulldown_container_title-placeholder">
-                                                                            Phường / Xã<input readonly=""
+                                                                            Phường / Xã<input id="communePay" readonly=""
                                                                                 class="m-pulldown_container_inputValue"
                                                                                 value="" fdprocessedid="rssgt"></div>
                                                                         <div class="m-pulldown_container_arrow"></div>
@@ -318,15 +348,9 @@
                                                                 class="u-fs-16 u-lh-30 a-paragraph-text a-paragraph-text-raisinBlack">
                                                             </p>
                                                             <div class="u-ml-17 u-mr-17">
-                                                                <div class="a-checkbox"><input id="billingAddress.home"
-                                                                        type="radio" name="billingAddress.type"
-                                                                        value="0"><label for="billingAddress.home">Nhà
-                                                                        riêng</label></div>
+                                                                
                                                             </div>
-                                                            <div class="a-checkbox"><input id="billingAddress.company"
-                                                                    type="radio" name="billingAddress.type"
-                                                                    value="1"><label for="billingAddress.company">Công
-                                                                    ty</label></div>
+                                                           
                                                         </div>
                                                     </div>
                                                 </div>
@@ -338,7 +362,7 @@
                                                 class="u-fs-24 u-fs-md-18 u-lh-30 u-lh-md-30 a-paragraph-text a-paragraph-text-700">
                                                 Hỗ trợ khách hàng</p>
                                             <div class="u-mt-22 u-mb-17">
-                                                <div class="a-textarea"><textarea placeholder="Ghi chú cho giao hàng"
+                                                <div class="a-textarea"><textarea id="notePay" placeholder="Ghi chú cho giao hàng"
                                                         class="a-textarea_inputele" rows="2" id="note"></textarea></div>
                                             </div>
                                             <p
@@ -352,7 +376,7 @@
                                     </section>
 
                                 </div>
-                                <div  class=" col-xxl-4 col-xl-5 col-12">
+                                <div class=" col-xxl-4 col-xl-5 col-12">
                                     <div class="p-checkout_infoWrapper">
                                         <div class="t-checkoutInfo">
                                             <div class="t-checkoutInfo_title">
@@ -361,15 +385,14 @@
                                                     Thông tin đơn hàng</p>
                                             </div>
                                             <div class="t-checkoutInfo_wrap">
-                                                <div class="t-checkoutInfo_products u-mt-negative-16"id="renderDataCart_InPayment">
-                                                   
-                                                  
-                                                   
-                                                  
+                                                <div class="t-checkoutInfo_products u-mt-negative-16"
+                                                    id="renderDataCart_InPayment">
+
+
                                                 </div>
 
                                                 <div class="t-checkoutInfo_divider u-mt-16 u-mb-16"></div>
-                                               
+
                                                 <div class="t-checkoutInfo_wrapGeneral">
                                                     <div class="t-checkoutInfo_wrapSub">
                                                         <div class="u-mt-16 u-mb-32">
@@ -377,7 +400,8 @@
                                                                 <p class="u-pr-6">Tổng thanh toán</p>
                                                                 <div style="opacity: 1;">
                                                                     <p class="u-fs-16 u-lh-21 a-paragraph-text"><span
-                                                                            style="color: rgb(227, 14, 72);">450.000</span>&nbsp;đ
+                                                                            id="totalPays"
+                                                                            style="color: rgb(227, 14, 72);"></span>&nbsp;
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -387,8 +411,8 @@
                                                                 class="a-button a-button-dark a-button-sm"
                                                                 fdprocessedid="nkqr6n">
                                                                 <div class="a-button_wrapper">
-                                                                    <p
-                                                                        class="u-fs-16 u-fs-md-12 u-lh-19 u-lh-md-16 a-paragraph-text a-paragraph-text-white a-paragraph-text-s01">
+                                                                    <p onclick="sendInforToEmail(event)"
+                                                                        class="u-fs-16 u-fs-md-12 u-lh-19 u-lh-md-16 a-paragraph-text a-paragraph-text-white a-paragraph-text-s01 payments-now">
                                                                         THANH TOÁN NGAY
                                                                     </p>
                                                                 </div>

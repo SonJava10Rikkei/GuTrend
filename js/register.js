@@ -16,8 +16,6 @@ eye2.addEventListener("click", function () {
 
     this.classList.toggle("fa-eye");
 })
-
-
 const ipnElement = document.querySelector("#Ippassword");
 const ipnElement1 = document.querySelector("#checkPassword");
 

@@ -186,9 +186,7 @@ let letDataRender = [
 /// in sản phẩm
 function renderListProducts() {
     let data = "";
-
     for (let i = 0; i < letDataRender.length; i++) {
-
         data += `
                 <div class="product_GT">
                                     <div class="m-productCard">
@@ -267,43 +265,72 @@ function renderListProducts() {
                                 </div>
 
         `
-
     }
-
     document.getElementById("listProducts").innerHTML = data;
 }
 renderListProducts();
 // function add to cart
 function addToCart(id) {
     console.log("id", id);
-    let listCart = JSON.parse(localStorage.getItem("listCart"));
 
-    if (listCart == null) {
-        listCart = [];
-        listCart.push(letDataRender[id]);
-        localStorage.setItem("listCart", JSON.stringify(listCart));
-    } else {
-
-        let flag = false;
-        for (let i = 0; i < listCart.length; i++) {
-            if (listCart[i].id == letDataRender[id].id) {
-                flag = true;
-                break;
-            } else {
-                flag = false;
-            }
-
+    let status = JSON.parse(localStorage.getItem("status"));
+    if (status == null) {
+        let check = confirm("bạn phải đăng nhập để mua hàng!");
+        if (check) {
+            window.location.href = "../page/login.html"
         }
-        if (flag == true) {
-            listCart[id].quanlity = ++listCart[id].quanlity;
-            localStorage.setItem("listCart", JSON.stringify(listCart));
-            alert("sản phẩm đã có trong giỏ hàng!")
-        } else {
+    } else {
+        let listCart = JSON.parse(localStorage.getItem("listCart"));
+
+        if (listCart == null) {
+            listCart = [];
             listCart.push(letDataRender[id]);
             localStorage.setItem("listCart", JSON.stringify(listCart));
 
-        }
 
+        } else {
+
+            let flag = false;
+            for (let i = 0; i < listCart.length; i++) {
+                if (listCart[i].id == letDataRender[id].id) {
+
+                    flag = true;
+                    break;
+                } else {
+                    flag = false;
+                }
+
+            }
+            if (flag == true) {
+
+
+                listCart[id].quanlity = ++listCart[id].quanlity;
+                localStorage.setItem("listCart", JSON.stringify(listCart));
+
+                alert("sản phẩm đã có trong giỏ hàng!")
+            } else {
+
+                listCart.push(letDataRender[id]);
+                localStorage.setItem("listCart", JSON.stringify(listCart));
+            }
+
+        }
+    }
+    renderQuatity();
+}
+function renderQuatity() {
+    let listCart = JSON.parse(localStorage.getItem("listCart"));
+    let sum = 0;
+    if (listCart == null) {
+        document.getElementById("totalQuantity").innerHTML = 0;
+        return;
+    } else {
+        for (let i = 0; i < listCart.length; i++) {
+
+            sum += listCart[i].quanlity;
+        }
+        document.getElementById("totalQuantity").innerHTML = sum;
     }
 }
 
+renderQuatity();    

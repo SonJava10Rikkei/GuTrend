@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/gio-hang.css">
 </head>
-
 <body>
     <div onclick="close_menu_user()" class="c-layout">
         <header class="t-header">
@@ -48,7 +46,7 @@
                                 </button>
                             </a>
                         </div>
-    
+
                         <div class="t-header_contactRight_element ">
                             <div class="t-headerSearch">
                                 <form class="header-search-input" novalidate="">
@@ -60,7 +58,7 @@
                                             style="width: 13px; height: 13px;"></i>
                                     </button>
                                 </form>
-    
+
                                 <!-- Phần Menu mobile -->
                                 <nav role="navigation">
                                     <div id="menuToggle">
@@ -79,8 +77,7 @@
                                                         id="add_element_fashion_mobile"></i>
                                                     <hr>
                                                 </a>
-                                                <!-- <a><i class="fa-solid fa-minus add_fashion_mobile"
-                                                            id="sub_menu_fashion_mobile"></i></a> -->
+                                                
                                                 <ul class="fashion_element_mobile">
                                                     <li><a href="">Váy Đầm</a></li>
                                                     <li><a href="">Áo Sơ Mi</a></li>
@@ -109,11 +106,10 @@
                                 <!-- Phần Menu mobile -->
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
-    
             <!--                     Phần menu mobile                      -->
             <div class="t-header_bottom">
                 <div class="t-header_logo-left">
@@ -166,15 +162,15 @@
                                         Đăng xuất
                                     </a>
                                 </p>
-    
+
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="t-header_botom-right">
-    
+
                         <div class="t-header_actions">
-    
+
                             <p style="margin-bottom: 0;"><span id="user_member"></span></p>
                             <div class="icon_header_user" onmouseover="callHoverEvent()">
                                 <a style="z-index: 0;" href="/page/login.html">
@@ -183,16 +179,14 @@
                             <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
                             <a href="/page/gio-hang.html"><img class="icon_header" src="/image/shopping-cart.png"
                                     alt=""></a>
-                            <p><span class="quantity_oder">0</span></p>
-    
+                            <p><span class="quantity_oder" id="quantity"></span></p>
+
                         </div>
                     </div>
-    
+
                 </div>
-    
             </div>
         </header>
-
         <div class="contents__all">
             <section class="h-100 h-custom" style="background-color: #d2c9ff;">
                 <div class="container py-5 h-100">
@@ -203,116 +197,7 @@
                                     <div class="row g-0">
                                         <div class="col-lg-8">
                                             <div class="p-5" id="renderDataCart">
-                                               <!--  <div class="d-flex justify-content-between align-items-center mb-5">
-                                                    <h1 class="fw-bold mb-0 text-black">Giỏ Hàng</h1>
-                                                    <h6 class="mb-0 text-muted">3 sản phẩm</h6>
-                                                </div>
-                                                <hr class="my-4">
-
-                                                <div class="row mb-4 d-flex justify-content-between align-items-center">
-                                                    <div class="col-md-2 col-lg-2 col-xl-2">
-                                                        <img src="/image/0-gach-dc07055.png" class="img-fluid rounded-3"
-                                                            alt="Cotton T-shirt">
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-xl-3">
-                                                        <h6 class="text-muted">Váy cam công sở</h6>
-                                                        <h6 class="text-black mb-0">Váy công sở</h6>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                                        <button class="btn btn-link px-2"
-                                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                            <i class="fas fa-minus"></i>
-                                                        </button>
-
-                                                        <input id="form1" min="0" name="quantity" value="1"
-                                                            type="number" class="form-control form-control-sm" />
-
-                                                        <button class="btn btn-link px-2"
-                                                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                            <i class="fas fa-plus"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                                        <h6 class="mb-0">590.000 đ</h6>
-                                                    </div>
-                                                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                                                    </div>
-                                                </div>
-
-                                                <hr class="my-4">
-
-                                                <div class="row mb-4 d-flex justify-content-between align-items-center">
-                                                    <div class="col-md-2 col-lg-2 col-xl-2">
-                                                        <img src="/image/0-do-la0701.png" class="img-fluid rounded-3"
-                                                            alt="Cotton T-shirt">
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-xl-3">
-                                                        <h6 class="text-muted">Áo be hoa đỏ</h6>
-                                                        <h6 class="text-black mb-0">Áo sơ mi</h6>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                                        <button class="btn btn-link px-2"
-                                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                            <i class="fas fa-minus"></i>
-                                                        </button>
-
-                                                        <input id="form1" min="0" name="quantity" value="1"
-                                                            type="number" class="form-control form-control-sm" />
-
-                                                        <button class="btn btn-link px-2"
-                                                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                            <i class="fas fa-plus"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                                        <h6 class="mb-0">220.000 đ</h6>
-                                                    </div>
-                                                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                                                    </div>
-                                                </div>
-
-                                                <hr class="my-4">
-
-                                                <div class="row mb-4 d-flex justify-content-between align-items-center">
-                                                    <div class="col-md-2 col-lg-2 col-xl-2">
-                                                        <img src="/image/0-hong-dc12001.png" class="img-fluid rounded-3"
-                                                            alt="Cotton T-shirt">
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-xl-3">
-                                                        <h6 class="text-muted">Váy hồng hoa nhí cổ tim</h6>
-                                                        <h6 class="text-black mb-0">Váy đầm </h6>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                                        <button class="btn btn-link px-2"
-                                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                            <i class="fas fa-minus"></i>
-                                                        </button>
-
-                                                        <input id="form1" min="0" name="quantity" value="1"
-                                                            type="number" class="form-control form-control-sm" />
-
-                                                        <button class="btn btn-link px-2"
-                                                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                            <i class="fas fa-plus"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                                        <h6 class="mb-0">490.000 đ</h6>
-                                                    </div>
-                                                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                                                    </div>
-                                                </div>
-
-                                                <hr class="my-4">
-
-                                                <div class="pt-5">
-                                                    <h6 class="mb-0"><a href="#!" class="text-body"><i
-                                                                class="fas fa-long-arrow-alt-left me-2"></i>Quay lại
-                                                            shop</a></h6>
-                                                </div> -->
+                                                
                                             </div>
                                         </div>
                                         <div class="col-lg-4 bg-grey">
@@ -321,8 +206,9 @@
                                                 <hr class="my-4">
 
                                                 <div class="d-flex justify-content-between mb-4">
-                                                    <h5 class="text-uppercase">3 sản phẩm</h5>
-                                                    <h5>1.300.000 đ</h5>
+                                                    <h5 class="text-uppercase"id="totalListCarts"> </h5>
+                                                   
+                                                   <h5 id="firsttotalPayments"> </h5>
                                                 </div>
 
                                                 <h5 class="text-uppercase mb-3">Giao hàng</h5>
@@ -351,7 +237,7 @@
 
                                                 <div class="d-flex justify-content-between mb-5">
                                                     <h5 class="text-uppercase">Tổng thanh toán</h5>
-                                                    <h5>1.320.000 đ</h5>
+                                                    <h5 id="totalPayments"></h5>
                                                 </div>
 
                                                 <a href="/page/thanh-toan.html"><button type="button"
@@ -498,5 +384,4 @@
     <script src="/js/main.js"></script>
     <script src="https://kit.fontawesome.com/7de9ee439a.js" crossorigin="anonymous"></script>
 </body>
-
 </html>

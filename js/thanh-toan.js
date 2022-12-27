@@ -1,8 +1,11 @@
 let dataCart_InPayment = JSON.parse(localStorage.getItem('listCart'));
 function renderCart_InPayment() {
-    console.log("1111", dataCart_InPayment);
+
     let data = '';
+    let sumListProducts = 0;
     for (let i = 0; i < dataCart_InPayment.length; i++) {
+        sumListProducts += `${dataCart_InPayment[i].quanlity} ` * `${dataCart_InPayment[i].price} `;
+
         data += `
 
                 <div class="u-mt-16">
@@ -31,6 +34,19 @@ function renderCart_InPayment() {
 
     }
     document.getElementById("renderDataCart_InPayment").innerHTML = data;
+    document.getElementById("totalPays").innerHTML = `${sumListProducts.toLocaleString()} Đ`;
 }
+renderCart_InPayment();
+function sendInforToEmail(e) {
+    e.preventDefault();
+    let namePay = document.getElementById("namePay").value;
+    let phonePay = document.getElementById("phonePay").phonePay;
+    let emailPay = document.getElementById("emailPay").value;
+    let streetPay = document.getElementById("streetPay").value;
+    let cityPay = document.getElementById("cityPay").value;
+    let districtsPay = document.getElementById("districtsPay").value;
+    let communePay = document.getElementById("communePay").value;
+    let notePay = document.getElementById("notePay").notePay;
 
-renderCart_InPayment();   
+
+}
