@@ -536,3 +536,25 @@ html {
     margin-top: 110px;
   }
 }
+
+/* ***************duoi banner*************** */
+
+.lazyload-wrapper {
+  background-color: #888888;
+  margin: 6rem 5rem 0 5rem;
+}
+
+.mkt_3_img {
+  margin-top: 40px;
+}
+
+.p-home_advertise {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-slider img {
+  height: 165px;
+  width: 420px;
+
+}

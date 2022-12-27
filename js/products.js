@@ -323,7 +323,7 @@ function renderQuatity() {
     let sum = 0;
     if (listCart == null) {
         document.getElementById("totalQuantity").innerHTML = 0;
-        document.getElementById("cartHearder").innerHTML = 0;
+        // document.getElementById("cartHearder").innerHTML = 0;
 
         return;
     } else {
@@ -332,12 +332,12 @@ function renderQuatity() {
             sum += listCart[i].quanlity;
         }
         document.getElementById("totalQuantity").innerHTML = sum;
-        document.getElementById("cartHearder").innerHTML = sum;
+        // document.getElementById("cartHearder").innerHTML = sum;
 
     }
 }
 
-renderQuatity();    
+renderQuatity();
 
 
 function timKiemSP() {

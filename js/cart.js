@@ -53,7 +53,7 @@ function renderCart() {
                                                 </div> 
                                                 ${data}
                                                 <div class="pt-5">
-                                                    <h6 class="mb-0"><a href="#!" class="text-body"><i
+                                                    <h6 class="mb-0"><a href="../page/product.html" class="text-body"><i
                                                                 class="fas fa-long-arrow-alt-left me-2"></i>Quay lại
                                                             shop</a></h6>
                                                 </div>  
@@ -62,13 +62,13 @@ function renderCart() {
         document.getElementById("totalListCarts").innerHTML = 0;
         document.getElementById("totalPayments").innerHTML = 0;
         document.getElementById("firsttotalPayments").innerHTML = 0;
-      
+
 
     } else {
         document.getElementById("totalListCarts").innerHTML = `${dataCart.length} Mặt hàng!`;
         document.getElementById("totalPayments").innerHTML = `${totalListPayments.toLocaleString()} VNĐ`;
         document.getElementById("firsttotalPayments").innerHTML = `${totalListPayments.toLocaleString()} Đ`;
-       
+
 
 
 
