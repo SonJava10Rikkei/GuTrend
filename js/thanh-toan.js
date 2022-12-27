@@ -22,7 +22,7 @@ function renderCart_InPayment() {
 
                                                                 </div>
                                                                 <div class="o-productEntry_priceZone">
-                                                                    <p class="a-paragraph-text">${dataCart_InPayment[i].price} đ</p>
+                                                                    <p class="a-paragraph-text">${dataCart_InPayment[i].price.toLocaleString('vi-VN')} đ</p>
                                                                 </div>
                                                             </div>
                                                         </div>

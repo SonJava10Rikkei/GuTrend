@@ -120,63 +120,64 @@ add_collection_catalog2.onclick = function () {
 
 
 
-// const VND = new Intl.NumberFormat('vi-VN', {
-//             style: 'currency',
-//             currency: 'VND',
-// });
-// document.write('VND.format(price)')
 
 let letDataRender = [
 
     {
-
-
         image: "../image/products/0-BE-AC12022.png",
-        name: "Quần ống đứng lai xéo1",
-        price: "350.000 đ",
+        name: "Áo trắng họa tiết",
+        price: 350000,
         quanlity: 1,
         id: 1
-
     },
     {
         image: "../image/products/0-DEN-DC12077.png",
-        name: "Quần ống đứng lai xéo2",
-        price: "350.000 đ",
+        name: "Đầm phối ren bản eo",
+        price: 450000,
         quanlity: 1,
         id: 2
-
-
-
     },
     {
         image: "../image/products/0-DEN-DC12085.png",
-        name: "Quần ống đứng lai xéo3",
-        price: "350.000 đ",
+        name: "Đầm đen body",
+        price: 500000,
         quanlity: 1,
         id: 3
-
-
-
     },
     {
         image: "../image/products/0-DO-QC12080.png",
-        name: "Quần ống đứng lai xéo4",
-        price: "350.000 đ",
+        name: "Đầm xuông",
+        price: 550000,
         quanlity: 1,
         id: 4
-
-
-
     },
     {
         image: "../image/products/0-HONG-AC12025.png",
-        name: "Quần ống đứng lai xéo5",
-        price: "350.000 đ",
+        name: "Áo sơ mi hồng",
+        price: 250000,
         quanlity: 1,
         id: 5
-
-
-
+    },
+    {
+        image: "../image/products/0-HONG-LV1209.png",
+        name: "Chân váy nắp túi kiểu",
+        price: 250000,
+        quanlity: 1,
+        id: 6
+    },
+    {
+        image: "../image/products/0-DO-LD1208.png",
+        name: "Đầm xòe phối cổ",
+        price: 300000,
+        quanlity: 1,
+        id: 7
+    },
+    {
+        image: "../image/products/0-TRANG-LA1204.png",
+        name: "Áo cổ V bâu nhọn",
+        price: 230000,
+        quanlity: 1,
+        id: 8
     },
 
 ]
@@ -256,8 +257,7 @@ function renderListProducts() {
                                                     QC12048</p>
                                             </div>
                                             <div class="d-flex justify-content-between align-items-end">
-                                                <p class="product_price" style="font-size: 21px; color: red;">${letDataRender[i].price}
-                                                </p>
+                                                <p class="product_price" style="font-size: 21px; color: red;">${letDataRender[i].price.toLocaleString('vi-VN')} đ</p>
                                                 <p
                                                     style="color: rgba(155, 155, 155, 0.849); text-decoration: line-through;">
                                                     590.000 đ</p>
@@ -297,6 +297,7 @@ function addToCart(id) {
         if (flag == true) {
             listCart[id].quanlity = ++listCart[id].quanlity;
             localStorage.setItem("listCart", JSON.stringify(listCart));
+            alert("sản phẩm đã có trong giỏ hàng!")
             console.log("sản phẩm đã có trong giỏ hàng!");
         } else {
             listCart.push(letDataRender[id]);
@@ -306,3 +307,5 @@ function addToCart(id) {
 
     }
 }
+
+
