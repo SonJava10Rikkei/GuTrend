@@ -140,6 +140,10 @@
     }
 }
 
+/* .product_arrangements {
+    outline: none;
+} */
+
 /************ CSS phần sản phẩm ***************/
 .negative_GT {
     display: flex;

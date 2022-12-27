@@ -338,3 +338,20 @@ function renderQuatity() {
 }
 
 renderQuatity();    
+
+
+function timKiemSP() {
+    let listRender = [];
+    let valueInput = document.getElementById("inPutSearch").value.toUpperCase();
+
+    for (let i = 0; i < listProductCuaLocal.length; i++) {
+        if (listProductCuaLocal[i].name.toUpperCase().indexOf(valueInput) != -1) {
+            console.log('11112');
+
+            listRender.push(listProductCuaLocal[i])
+        }
+    }
+
+    renderListProducts(listRender);
+
+}
