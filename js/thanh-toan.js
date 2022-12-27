@@ -39,14 +39,46 @@ function renderCart_InPayment() {
 renderCart_InPayment();
 function sendInforToEmail(e) {
     e.preventDefault();
+
+
+    let sumListProducts = 0;
+    for (let i = 0; i < dataCart_InPayment.length; i++) {
+        sumListProducts += `${dataCart_InPayment[i].quanlity} ` * `${dataCart_InPayment[i].price} `;
+        
+    }
+    let resultPayments = sumListProducts.toLocaleString();
     let namePay = document.getElementById("namePay").value;
-    let phonePay = document.getElementById("phonePay").phonePay;
+    let phonePay = document.getElementById("phonePay").value;
     let emailPay = document.getElementById("emailPay").value;
     let streetPay = document.getElementById("streetPay").value;
     let cityPay = document.getElementById("cityPay").value;
-    let districtsPay = document.getElementById("districtsPay").value;
-    let communePay = document.getElementById("communePay").value;
-    let notePay = document.getElementById("notePay").notePay;
+    let notePay = document.getElementById("notePay").value;
+    if (namePay != "" && phonePay != "" && emailPay != "" && streetPay != "" && cityPay != "" && notePay != "") {
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "haitqrikkei@gmail.com",
+            Password: "C25575E4F3C7BBDE2F82765E0C4CC804C88D",
+            To: `${emailPay}`,
+            From: "haitqrikkei@gmail.com",
+            Subject: "This is the subject",
+            Body: `
+                Hóa đơn : ${namePay}
+                SĐT:${phonePay}}
+                email:${emailPay}
+                Địa chỉ: Thành Phố: ${streetPay}
+                Ghi chú: ${notePay}
+                Tổng tiền bạn phải trả : ${resultPayments}
 
-
+            `
+        }).then(
+            message => {
+                console.log(message);
+            }
+        );
+        setTimeout(() => {
+            alert("cảm ơn bạn đã mua hàng!");
+            window.location.href="../index.html";
+        })
+        }
 }
+

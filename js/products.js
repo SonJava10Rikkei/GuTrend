@@ -206,7 +206,7 @@ function renderListProducts() {
                                                 </div>
                                             </a>
                                             <div class="m-productCard_iconFavorite">
-                                                <div class="a-icon_GT">
+                                                <div id="icon_heart_w" class="a-icon_GT">
                                                     <img src="/image/icon-heart-while.png" alt="heart_white"
                                                         loading="lazy">
                                                 </div>
@@ -323,6 +323,8 @@ function renderQuatity() {
     let sum = 0;
     if (listCart == null) {
         document.getElementById("totalQuantity").innerHTML = 0;
+        document.getElementById("cartHearder").innerHTML = 0;
+
         return;
     } else {
         for (let i = 0; i < listCart.length; i++) {
@@ -330,6 +332,8 @@ function renderQuatity() {
             sum += listCart[i].quanlity;
         }
         document.getElementById("totalQuantity").innerHTML = sum;
+        document.getElementById("cartHearder").innerHTML = sum;
+
     }
 }
 

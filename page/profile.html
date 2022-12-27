@@ -184,7 +184,7 @@
                             <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
                             <a href="/page/gio-hang.html"><img class="icon_header" src="/image/shopping-cart.png"
                                     alt=""></a>
-                            <p><span class="quantity_oder">0</span></p>
+                            <p><span id="quantity_oder_profile" class="quantity_oder">0</span></p>
 
                         </div>
                     </div>
@@ -362,5 +362,22 @@
     <script src="/js/main.js"></script>
     <script src="https://kit.fontawesome.com/7de9ee439a.js" crossorigin="anonymous"></script>
 </body>
+<script>
+    function renderCarts() {
+        let listCart = JSON.parse(localStorage.getItem("listCart"));
+        let sum = 0;
+        if (listCart == null) {
+            document.getElementById("quantity_oder_profile").innerHTML = 0;
+            return;
+        } else {
+            for (let i = 0; i < listCart.length; i++) {
+
+                sum += listCart[i].quanlity;
+            }
+            document.getElementById("quantity_oder_profile").innerHTML = sum;
+        }
+    }
+    renderCarts();
+</script>
 
 </html>

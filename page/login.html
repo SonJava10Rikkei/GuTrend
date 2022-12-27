@@ -48,7 +48,7 @@
                 </button>
               </a>
             </div>
-  
+
             <div class="t-header_contactRight_element ">
               <div class="t-headerSearch">
                 <form class="header-search-input" novalidate="">
@@ -59,7 +59,7 @@
                     <i class="fa-sharp fa-solid fa-magnifying-glass" style="width: 13px; height: 13px;"></i>
                   </button>
                 </form>
-  
+
                 <!-- Phần Menu mobile -->
                 <nav role="navigation">
                   <div id="menuToggle">
@@ -107,11 +107,11 @@
                 <!-- Phần Menu mobile -->
               </div>
             </div>
-  
+
           </div>
         </div>
       </div>
-  
+
       <!--                     Phần menu mobile                      -->
       <div class="t-header_bottom">
         <div class="t-header_logo-left">
@@ -164,15 +164,15 @@
                     Đăng xuất
                   </a>
                 </p>
-  
+
               </div>
             </div>
           </div>
-  
+
           <div class="t-header_botom-right">
-  
+
             <div class="t-header_actions">
-  
+
               <p style="margin-bottom: 0;"><span id="user_member"></span></p>
               <div class="icon_header_user" onmouseover="callHoverEvent()">
                 <a style="z-index: 0;" href="/page/login.html">
@@ -180,13 +180,13 @@
               </div>
               <a href=""><img class="icon_header" src="/image/icon-heart-w.png" alt=""></a>
               <a href="/page/gio-hang.html"><img class="icon_header" src="/image/shopping-cart.png" alt=""></a>
-              <p><span class="quantity_oder">0</span></p>
-  
+              <p><span id="quantity_oder_LG" class="quantity_oder">0</span></p>
+
             </div>
           </div>
-  
+
         </div>
-  
+
       </div>
     </header>
     <div class="contents__all">
@@ -384,5 +384,22 @@
   <script src="https://kit.fontawesome.com/7de9ee439a.js" crossorigin="anonymous"></script>
   <script src="/js/login.js"></script>
 </body>
+<script>
+  function renderCarts() {
+    let listCart = JSON.parse(localStorage.getItem("listCart"));
+    let sum = 0;
+    if (listCart == null) {
+      document.getElementById("quantity_oder_LG").innerHTML = 0;
+      return;
+    } else {
+      for (let i = 0; i < listCart.length; i++) {
+
+        sum += listCart[i].quanlity;
+      }
+      document.getElementById("quantity_oder_LG").innerHTML = sum;
+    }
+  }
+  renderCarts();
+</script>
 
 </html>

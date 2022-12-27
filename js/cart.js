@@ -62,11 +62,13 @@ function renderCart() {
         document.getElementById("totalListCarts").innerHTML = 0;
         document.getElementById("totalPayments").innerHTML = 0;
         document.getElementById("firsttotalPayments").innerHTML = 0;
+      
+
     } else {
         document.getElementById("totalListCarts").innerHTML = `${dataCart.length} Mặt hàng!`;
         document.getElementById("totalPayments").innerHTML = `${totalListPayments.toLocaleString()} VNĐ`;
-
         document.getElementById("firsttotalPayments").innerHTML = `${totalListPayments.toLocaleString()} Đ`;
+       
 
 
 
