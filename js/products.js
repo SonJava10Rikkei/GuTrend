@@ -298,7 +298,6 @@ function addToCart(id) {
             listCart[id].quanlity = ++listCart[id].quanlity;
             localStorage.setItem("listCart", JSON.stringify(listCart));
             alert("sản phẩm đã có trong giỏ hàng!")
-            console.log("sản phẩm đã có trong giỏ hàng!");
         } else {
             listCart.push(letDataRender[id]);
             localStorage.setItem("listCart", JSON.stringify(listCart));
@@ -307,5 +306,4 @@ function addToCart(id) {
 
     }
 }
-
 

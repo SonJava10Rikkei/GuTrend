@@ -51,4 +51,4 @@ function renderCart() {
                                                 </div>  
     `
 }
-renderCart();   
+renderCart();
